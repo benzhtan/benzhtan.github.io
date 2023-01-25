@@ -48,10 +48,13 @@
                 name: "Holmes Hall",
                 color: "Green",
                 street: "700 Huntington Ave",
-                zipCode: "02019"
-            }
+                zipCode: "02019",
+                greetings:function(name){
+                    console.log("Hey " + name + "!")
+                }
+            };
             
-            console.log(newObject.zipCode);
+            console.log(newObject.greetings("Alex"));
 
             // Types of functions
 
