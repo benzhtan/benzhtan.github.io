@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8" />
         <title>Javascript</title>
-        <!--Loads external style sheet-->
-        <link rel="stylesheet" href="style24.css">
 
         <!--This is a script file-->
         <script>
@@ -95,9 +93,74 @@
 
             if(condVal <= 10) {
                 console.log("This isn't so bad.");
-            } else {
+            } else if(condVal == 15) {
                 console.log("This is bad.");
+            } else {
+                console.log("I don't know what to do.");
             }
+
+            // Combine functions and conditional statements
+
+            var greaterThanTen = function(val) {
+                if (val > 10) {
+                    console.log("Yes!");
+                } else if(val == 10) {
+                    console.log("No!");
+                } else {
+                    val = val + 1;
+                }
+                console.log(val);
+                return val;
+            }
+            var checker = greaterThanTen(100);
+            console.log(checker);
+
+            // Different ways of initializing functions
+
+            // 1. Keyword "function"
+            function greaterThanTen(val) {
+                if (val > 10) {
+                    console.log("Yes!");
+                } else if(val == 10) {
+                    console.log("No!");
+                } else {
+                    val = val + 1;
+                }
+                console.log(val);
+                return val;
+            }
+            var checker = greaterThanTen(100);
+            console.log(checker);
+
+            // 2. "Fat arrow" notation
+            greaterThanTen(val) => {
+                if (val > 10) {
+                    console.log("Yes!");
+                } else if(val == 10) {
+                    console.log("No!");
+                } else {
+                    val = val + 1;
+                }
+                console.log(val);
+                return val;
+            }
+            var checker = greaterThanTen(100);
+            console.log(checker);
+
+            // IN-CLASS ASSIGNMENT
+
+            // 1. Create a function that returns square root of input variable. Check if input variable is a positive integer.
+            
+            var sqrt = function(i) {
+                if (i < 0) {
+                    console.log("Enter a positive integer...");
+                } else {
+                    i = i**2;
+                }
+                console.log(i)
+            
+
+            // 2. Function that prints numbers in decreasing order. Print all numbers starting from input number to zero. Check if input variable is a positive integer.
         </script>
     </head>
 
