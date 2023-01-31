@@ -83,7 +83,6 @@
                 let exp = val**2;
                 return exp;
             }
-
             var myExp = expValues(10);
             console.log(myExp);
 
@@ -135,15 +134,23 @@
             // IN-CLASS ASSIGNMENT
 
             // 1. Create a function that returns square root of input variable. Check if input variable is a positive integer.
+                // Attempt #1
+                var sqrt = function(i) {
+                    if (i < 0) {
+                     console.log("Enter a positive integer...");
+                 } else {
+                     i = i**2;
+                 }
+                 console.log(i)
             
-            var sqrt = function(i) {
-                if (i < 0) {
-                    console.log("Enter a positive integer...");
-                } else {
-                    i = i**2;
+            // Attempt #2
+                function expValues(val){if(isNaN(val)){
+                    alert("Enter an integer!");
+                    } else{
+                        return Math.sqrt(val);
+                    }
                 }
-                console.log(i)
-            
+                console.log();
 
             // 2. Function that prints numbers in decreasing order. Print all numbers starting from input number to zero. Check if input variable is a positive integer.
         </script>
