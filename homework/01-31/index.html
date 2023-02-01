@@ -130,11 +130,19 @@
                 var circles = d3.select("#data-viz").selectAll("circle")
                     .data(dataArray, function(d){
                         return d.country;
-                    });
-                
+                    }); 
+
                 //Enterting circles
                 circles.enter().append("circle")
-                    .fill("fill", "green")
+                    .fill("fill", function(d){
+                        if d.country == "usa"){
+                            return "blue";
+                        } else if (d.country == "mex"){
+                            return "green";
+                        } else if (d.country == "chn"){
+                            return "red";
+                        }
+                    })
                     .att("id", function(d){
                         return d.country;
                     })
