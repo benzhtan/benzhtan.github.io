@@ -9,6 +9,21 @@
     </head>
 
     <body>
+
+        <div>
+            <svg width="760" height="200" id="static-circles">
+                <rect width="760" height="200" style="fill:white; stroke-width:1; stroke:black"/>
+
+                <g transform = "translate(70,70)">
+                    <circle/>
+                    <circle cx = "120"/>
+                    <circle cx = "240"/>
+                    <circle cx = "360"/>
+                    <circle cx = "480"/>
+                </g>
+            </svg>
+        </div>
+        
         <div>
             <h1 id="HL">
                 JS Libraries,<br>
@@ -45,7 +60,7 @@
                 .attr("class", "comicText");
             
             d3.selectAll("p").style("margin-top", "80px");
-            
+
         </script>
     </body>
 </html>
