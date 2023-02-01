@@ -25,6 +25,20 @@
             console.log(sm);
         </script>
 
+        <div>
+            <svg width="760" height="200" id="static-circles">
+                <rect width="760" height="200" style="fill:white; stroke-width:1; stroke:black"/>
+
+                <g transform = "translate(70,70)">
+                    <circle/>
+                    <circle cx = "120"/>
+                    <circle cx = "240"/>
+                    <circle cx = "360"/>
+                    <circle cx = "480"/>
+                </g>
+            </svg>
+        </div>
+
         <script>
             var page_title = d3.select("#HL");
             page_title.style("color", "blue");     //(attribute, value)
@@ -47,20 +61,11 @@
             // d3.selectAll("p").style("margin-top", "80px");
             
             // specifying individual elements using d3.select
+            var allCircles = d3.selectAll("circle")
+                .style("fill", "green")
+                .attr("cy","50")
+                .attr("r", "10");
 
-            <div>
-                <svg width="760" height="200" id="static-circles">
-                    <rect width="760" height="200" style="fill:white; stroke-width:1; stroke:black"/>
-
-                    <g transform = "translate(70,70)">
-                        <circle/>
-                        <circle cx = "120"/>
-                        <circle cx = "240"/>
-                        <circle cx = "360"/>
-                        <circle cx = "480"/>
-                    </g>
-                </svg>
-            </div>
         </script>
     </body>
 </html>
