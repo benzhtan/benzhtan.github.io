@@ -27,21 +27,18 @@
             console.log(sm);
         </script>
 
-        <!--
         <div>
-            <svg width="760" height="200" id="static-circles">
+            <svg width="760" height="200" id="">
                 <rect width="760" height="200" style="fill:white; stroke-width:1; stroke:black"/>
+                
+                <!--<circle/>
+                <circle cx = "120"/>
+                <circle cx = "240"/>
+                <circle cx = "360"/>
+                <circle cx = "480"/>-->
 
-                <g transform = "translate(70,70)">
-                    <circle/>
-                    <circle cx = "120"/>
-                    <circle cx = "240"/>
-                    <circle cx = "360"/>
-                    <circle cx = "480"/>
-                </g>
             </svg>
         </div>
-        -->
 
         <script>
             var page_title = d3.select("#HL");
@@ -72,6 +69,92 @@
 
         </script>
 
-        
+        <div>
+            <svg id="data-viz">
+
+            </svg>
+        </div>
+
+        <div>
+            <button onClick="drawCircles(data1)">Data 1</button>
+            <button onClick="drawCircles(data2)">Data 2</button>
+            <button onClick="drawCircles(data3)">Data 3</button>
+        </div>
+
+        <script>
+            // Data array 1
+            var data1 = [
+                {
+                    country: "usa",
+                    value: 12412341
+                },
+                {
+                    country:"mex",
+                    value: 24318650
+                }
+            ];
+            
+            var data2 = [
+                {
+                    country: "chn",
+                    value:"65430234"
+                },
+                {
+                    country: "mex",
+                    value:"24318650"
+                }
+            ];
+
+            var data3 = [
+                {
+                    country: "chn",
+                    value:"65430234"
+                },
+                {
+                    country: "mex",
+                    value:"24318650"
+                },
+                {
+                    country: "usa",
+                    value: 12412340
+                }
+            ];
+            
+            // This creates the random starting positions
+            function randomPosition(){
+                return Math.random() * 140 + 70;
+            }
+
+            // Function that draws circles using data arrays
+            function drawCircles(dataArray) {
+                var circles = d3.select("#data-viz").selectAll("circle")
+                    .data(dataArray, function(d){
+                        return d.country;
+                    });
+                
+                //Enterting circles
+                circles.enter().append("circle")
+                    .fill("fill", "green")
+                    .att("id", function(d){
+                        return d.country;
+                    })
+                    .attr("cy", "100")
+                    .attr("cx", randomPosition)
+                    .attr("r", "0")
+                    .transition().duration(1000)
+                    .attr("r","25")
+
+                //Updating circles
+                circles.transition().duration(1000)
+                    .attr("cx", randomPosition);
+                
+                //Exiting circles
+                circles.exit()
+                    .transition().duration(1000)
+                    .attr("r", "0")
+                    .remove();
+            }
+
+        </script>
     </body>
 </html>
