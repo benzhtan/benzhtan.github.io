@@ -16,15 +16,18 @@
             </h1>
         </div>
 
+        <!--
         <p>This is an illustration of</p>
         <p>the D3 function</p>
         <p>.selectALL for chnging multiple elements</p>
+        -->
         
         <script>
             var sm = sumAB(2,5);
             console.log(sm);
         </script>
 
+        <!--
         <div>
             <svg width="760" height="200" id="static-circles">
                 <rect width="760" height="200" style="fill:white; stroke-width:1; stroke:black"/>
@@ -38,6 +41,7 @@
                 </g>
             </svg>
         </div>
+        -->
 
         <script>
             var page_title = d3.select("#HL");
@@ -60,12 +64,14 @@
             
             // d3.selectAll("p").style("margin-top", "80px");
             
-            // specifying individual elements using d3.select
+            // using d3.selectAll() for multiple simultaneous selections
             var allCircles = d3.selectAll("circle")
                 .style("fill", "green")
                 .attr("cy", "50")
                 .attr("r", "30");
 
         </script>
+
+        
     </body>
 </html>
