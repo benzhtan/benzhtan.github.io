@@ -5,6 +5,7 @@
         <title>01-31 -- Controling the DOM through D3.js</title>
         <link rel="stylesheet" href="styles.css">
         <script src="scripts.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
     </head>
 
     <body class="content">
@@ -24,17 +25,19 @@
         <div id="viewbox">
             <svg width="760" height="200" id="">
                 <rect width="760" height="200" style="fill:white; stroke-width:1; stroke:black"/>
-                
+                <rect style="fill:blue"/>                
                 
 
             </svg>
         </div>
 
-        <button type="button" onclick="">Next &#62;</button>
+        <div id="navigation">
+            <button type="button" onclick="">Next &#62;</button>
 
-        <form action="https://benzhtan.github.io/index.html">
-            <input type="submit" value="Back to home" />
-        </form>
+            <form action="https://benzhtan.github.io/index.html">
+                <input type="submit" value="Back to home" />
+            </form>
+        </div>
 
     </body>
 </html>
