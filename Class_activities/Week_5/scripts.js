@@ -44,15 +44,13 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
 // CALLBACK function. For example, here is one that simply prints 
 // the data in the console.
 
-// function parseLOG(d) {
-
-//     console.log(d);
-
-// }
+ function parseLOG(d) {
+    console.log(d);
+}
 
 // We supply this function to the d3.text() method in this way:
 
-// d3.text("datasets/file.txt").then(parseLOG);
+ d3.text("datasets/file.txt").then(parseLOG);
 
 
 // 2. Load a CSV file and print its content
@@ -60,7 +58,7 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
 // The following line loads a CSV file and prints its content using
 // the same callback function as before. 
 
-// d3.csv("datasets/cities-sm.csv").then(parseLOG);
+ d3.csv("datasets/cities-sm.csv").then(parseLOG);
 
 // NOTE 1: In CSV files, the first row of the file is expected 
 //         to be the key/names for each data point.
