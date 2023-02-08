@@ -92,11 +92,11 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
 
 // let urlRealTime = "https://whiteboard.datawheel.us/api/google-analytics/realtime/random";
 
-// function loadData() {
+function loadData() {
 
-    // d3.json(urlRealTime).then(parseLOG);
+    d3.json(urlRealTime).then(parseLOG);
 
-// }
+}
 
 // setInterval(loadData, 1000);
 
@@ -123,11 +123,11 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
 //       change you make at one point acts on the data it receives from a change
 //       in a previous point.  
 
-// d3.csv("datasets/cities-sm.csv").then(function(data){
+d3.csv("datasets/cities-sm.csv").then(function(data){
     
     // This accesses the first row of the csv dataset
 
-    // console.log(data[0]);
+    console.log(data[0]);
 
     // Change values using the .forEach() method that loops
     // through the rows of the dataset. In this way, you 
@@ -140,14 +140,13 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
     //      b. Use the unary operator +
     //  The following function uses method (b).
 
-    // data.forEach( function(d) {
+    data.forEach( function(d) {
 
-    //     // Here, we alter the keys "population" and "land area" only.
-    //     // Thus, we leave "city" and "state" as they are.
-    //     d.population = +d.population;
-    //     d["land area"] = +d["land area"];
-
-    // });
+         // Here, we alter the keys "population" and "land area" only.
+         // Thus, we leave "city" and "state" as they are.
+        d.population = +d.population;             //the "+" is a unary operator. Forces the returned value into an int type
+        d["land area"] = +d["land area"];
+    });
 
     // Filtering Data 
     
@@ -155,14 +154,13 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
     // filled with elements that pass a particular test provided by a 
     // custom function.
 
-    // let filtered_data = data.filter(function(d) {
+    let filtered_data = data.filter(function(d) {
 
-    //     // Return the object iff its key is equal to a specified string
-    //     return d.state === "NY";
+        // Return the object iff its key is equal to a specified string
+        return d.state === "NY";
+    })
 
-    // })
-
-    // console.log(filtered_data);
+    console.log(filtered_data);
 
     // Finding MINIMUM or MAXIMUM value of a numerical variable
 
@@ -170,15 +168,15 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
     // the array/object to be analyzed and an "accessor" function that
     // returns the object key value to be used for the analysis.
 
-    // function getValue(d) {
-    //     // Retrieves only the value in the column "population"
-    //     return +d.population;
-    // }
+    function getValue(d) {
+        // Retrieves only the value in the column "population"
+        return +d.population;
+    }
 
-    // const min_pop = d3.min(data, getValue);
-    // const max_pop = d3.max(data, getValue);
+    const min_pop = d3.min(data, getValue);
+    const max_pop = d3.max(data, getValue);
 
-    // console.log(min_pop, max_pop);
+    console.log(min_pop, max_pop);
 
     // GROUPING DATA
 
@@ -188,16 +186,14 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
 
     // Here, we group the data by "city".
 
-    // let grouped_data = d3.group(data, function(d) {
-
-    //    return d.city;
-
-    // });
+    let grouped_data = d3.group(data, function(d) {
+       return d.city;
+    });
 
     // // Returns a Map
-    // console.log(grouped_data);
+    console.log(grouped_data);
 
     // // Then, you can query the map for a particular group.
-    // console.log(grouped_data.get("boston"));
+    console.log(grouped_data.get("boston"));
 
-// });
+});
