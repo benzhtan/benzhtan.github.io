@@ -1,4 +1,4 @@
-d3.csv("./data/gapminder.csv").then(function(data) {
+d3.csv("/data/gapminder.csv").then(function(data) {
 
     //1. DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS//
 
@@ -49,15 +49,17 @@ d3.csv("./data/gapminder.csv").then(function(data) {
 
     // 5. DRAW AXES //
     
-    const xAxis = svg.append("g")
+    const xAxis = {svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(0,${height-margin.bottom})`)
-        .call(d3.axisBottom().scale(xScale));
+        .call(d3.axisBottom().scale(xScale))
+    };
 
-    const yAxis = svg.append("g")
+    const yAxis = {svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(${margin.left},0)`)
-        .call(d3.axisLeft().scale(yScale));
+        .call(d3.axisLeft().scale(yScale))
+    };
 
 
     // 6. DRAW BARS //
@@ -70,8 +72,8 @@ d3.csv("./data/gapminder.csv").then(function(data) {
             .attr("y", function(d) { return yScale(d.lifeExp); })
             .attr("width", xScale.bandwidth())
             .attr("height", function(d) { return height - (margin.bottom + yScale(d.lifeExp)) })
-            .attr("fill", "steelblue");
-    }
+            .attr("fill", "steelblue")
+    };
     
     // 7. DRAW AXIS LABELS //
     
@@ -79,14 +81,14 @@ d3.csv("./data/gapminder.csv").then(function(data) {
         .attr("class","axisLabel")
         .attr("x", width/2)
         .attr("y", height-margin.bottom/2)
-        .text("Year");
-        }
+        .text("Year")
+        };
 
     const yAxisLabel = {svg.append("text")
                            .attr("class","axisLabel")
                            .attr("transform","rotate(-90)")
                            .attr("x", -height/2)
                            .attr("y", margin.left/2)
-                           .text("Life Expectancy (Years)");
-                        }
+                           .text("Life Expectancy (Years)")
+                        };
 });
