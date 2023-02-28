@@ -1,34 +1,23 @@
-d3.csv("/data/gapminder.csv").then(function(data) {
 
-    //1. DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS//
+d3.csv("./data/gapminder.csv").then(function(data) {
 
-
+   
     const width = document.querySelector("#chart").clientWidth;
     const height = document.querySelector("#chart").clientHeight;
 
-    // Initializing the viewport of the SVG canvas//
-    // An SVG Canvas's Viewport has a "width" and "height"//
-    
     const svg = d3.select("#chart")
         .append("svg")
         .attr("width", width)
         .attr("height", height);
 
-
-    //2. FILTER THE DATA //
-
     let filtered_data = data.filter(function(d) {
         return d.country === 'United States';
     });
-
-    // 3. DETERMINE MIN AND MAX VALUES OF VARIABLES //
 
     const lifeExp = {
         min: d3.min(filtered_data, function(d) { return +d.lifeExp; }),
         max: d3.max(filtered_data, function(d) { return +d.lifeExp; })
     };
-
-    // 4. CREATE SCALES //
 
     const margin = {
         top: 50, 
@@ -46,25 +35,17 @@ d3.csv("/data/gapminder.csv").then(function(data) {
         .domain([50, lifeExp.max])
         .range([height - margin.bottom, margin.top]);
 
-
-    // 5. DRAW AXES //
-    
-    const xAxis = {svg.append("g")
+    const xAxis = svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(0,${height-margin.bottom})`)
-        .call(d3.axisBottom().scale(xScale))
-    };
+        .call(d3.axisBottom().scale(xScale));
 
-    const yAxis = {svg.append("g")
+    const yAxis = svg.append("g")
         .attr("class","axis")
         .attr("transform", `translate(${margin.left},0)`)
-        .call(d3.axisLeft().scale(yScale))
-    };
+        .call(d3.axisLeft().scale(yScale));
 
-
-    // 6. DRAW BARS //
-
-    const points = {svg.selectAll("rect")
+    const points = svg.selectAll("rect")
         .data(filtered_data)
         .enter()
         .append("rect")
@@ -72,23 +53,19 @@ d3.csv("/data/gapminder.csv").then(function(data) {
             .attr("y", function(d) { return yScale(d.lifeExp); })
             .attr("width", xScale.bandwidth())
             .attr("height", function(d) { return height - (margin.bottom + yScale(d.lifeExp)) })
-            .attr("fill", "steelblue")
-    };
+            .attr("fill", "steelblue");
     
-    // 7. DRAW AXIS LABELS //
-    
-    const xAxisLabel = {svg.append("text")
+    const xAxisLabel = svg.append("text")
         .attr("class","axisLabel")
         .attr("x", width/2)
         .attr("y", height-margin.bottom/2)
-        .text("Year")
-        };
+        .text("Year");
 
-    const yAxisLabel = {svg.append("text")
-                           .attr("class","axisLabel")
-                           .attr("transform","rotate(-90)")
-                           .attr("x", -height/2)
-                           .attr("y", margin.left/2)
-                           .text("Life Expectancy (Years)")
-                        };
+    const yAxisLabel = svg.append("text")
+        .attr("class","axisLabel")
+        .attr("transform","rotate(-90)")
+        .attr("x", -height/2)
+        .attr("y", margin.left/2)
+        .text("Life Expectancy (Years)");
+
 });
