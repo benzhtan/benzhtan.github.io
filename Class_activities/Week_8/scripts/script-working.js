@@ -45,8 +45,27 @@
            .attr("stroke-width", "0.5px");
 
 // 9. Plotting on geographical map
+        // NOTE! In D3, you need to reverse lat and lon
+        var points = [
+            {"name": "Boston",
+             "coords": [-71.0589, 42.3601]
+            },
+            {"name": "London",
+             "coords": [-0.1278, 51.5074]
+            }
+        ];
         
-// 10. 
-// 11. 
+// 10. D3 join for points on map
+        map.selectAll("circle")
+           .data(points)
+           .enter()
+           .append("circle")
+           .attr("r", 4)
+           .attr("fill", "#201E20")
+           .attr("transform", function(d){
+             return "translate(" + proj(d.coords) + ")";
+           });
+
+// 11. D3 Zoom and Pan
 
     });
