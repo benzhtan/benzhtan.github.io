@@ -67,5 +67,16 @@
            });
 
 // 11. D3 Zoom and Pan
-
+        function zoomed(e) {
+            // "e" represents an event, which in this case, is a zoom event
+            map.attr("transform", e.transform);
+        }
+        
+        let zoom = d3.zoom()
+           // Specifies the Zooming boundaries; which is the size of the viewport
+           .translateExtent([[0,0], [width, height]])
+           . scaleExtent([1, 15])
+           .on("zoom", zoomed);
+        // Make the svg canvas have a certain behavior specified within the parentheses.
+        svg.call(zoom);
     });
