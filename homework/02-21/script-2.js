@@ -1,33 +1,28 @@
-d3.csv("/data/gapminder.csv").then(function(data) {
+// 1. Define and create SVG canvas
 
-// 1. DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
+const width = document.querySelector("#chart").clientWidth;
+const height = document.querySelector("#chart").clientHeight;
 
-    const width = document.querySelector("#chart").clientWidth;
-    const height = document.querySelector("#chart").clientHeight;
+const svg = d3.select("#chart")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
 
-    const svg = d3.select("#chart")
-        .append("svg")
-        .attr("width", width)
-        .attr("height", height);
+// 2. Load and filter the data
 
-// 2. FILTER THE DATA
-
+d3.csv("./data/gapminder.csv").then(function(data) {
     let filtered_data = data.filter(function(d) {
-
         return d.country === 'United States';
-
     });
 
-// 3. DETERMINE MIN AND MAX VALUES OF VARIABLES
+// 3. Determine max and min of variables
 
     const lifeExp = {
-        
         min: d3.min(filtered_data, function(d) { return +d.lifeExp; }),
         max: d3.max(filtered_data, function(d) { return +d.lifeExp; })
-
     };
 
-// 4. CREATE SCALES
+// 4. Create scales
 
     const margin = {
         top: 50, 
@@ -45,7 +40,7 @@ d3.csv("/data/gapminder.csv").then(function(data) {
         .domain([50, lifeExp.max])
         .range([height - margin.bottom, margin.top]);
 
-// 5. DRAW AXES
+// 5. Draw axes
 
     const xAxis = svg.append("g")
         .attr("class","axis")
@@ -57,7 +52,7 @@ d3.csv("/data/gapminder.csv").then(function(data) {
         .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft().scale(yScale));
 
-// 6. DRAW BARS
+// 6. Draw the bars
 
     const points = svg.selectAll("rect")
         .data(filtered_data)
@@ -68,9 +63,8 @@ d3.csv("/data/gapminder.csv").then(function(data) {
             .attr("width", xScale.bandwidth())
             .attr("height", function(d) { return height - (margin.bottom + yScale(d.lifeExp)) })
             .attr("fill", "steelblue");
-    
-// 7. DRAW AXIS LABELS
 
+// Draw axis lables
     const xAxisLabel = svg.append("text")
         .attr("class","axisLabel")
         .attr("x", width/2)
