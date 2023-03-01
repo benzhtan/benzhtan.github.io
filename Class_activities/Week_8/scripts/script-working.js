@@ -39,13 +39,13 @@
            // Use "d" attribute in SVG graphics to define a path to be drawn. It is a presentation attribute. Can use CSS properties
            .attr("d", path)
            // Everything from here is stylistic
-            .attr("fill", "#FCEDDA")
-            .attr("vector-effect", "non-scaling-stroke")
-            .attr("stroke", "#FC766AFF")
-            .attr("stroke-width", "0.5px")
+           .attr("fill", "#FCEDDA")
+           .attr("vector-effect", "non-scaling-stroke")
+           .attr("stroke", "#FC766AFF")
+           .attr("stroke-width", "0.5px");
 
 // 9. Plotting on geographical map
-
+        
 // 10. 
 // 11. 
 
