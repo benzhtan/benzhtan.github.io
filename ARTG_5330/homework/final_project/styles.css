@@ -1,7 +1,8 @@
-p {
+h1, h3, #navigation {
     text-align: center;
-    margin: auto
 }
-#navigation {
-    text-align: center;
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
 }
