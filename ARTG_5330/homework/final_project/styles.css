@@ -1,2 +1,7 @@
-p {margin: auto}
-#navigation {text-align: center;}
+p {
+    text-align: center;
+    margin: auto
+}
+#navigation {
+    text-align: center;
+}
