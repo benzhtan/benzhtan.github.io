@@ -1,4 +1,8 @@
-h1, h3, footer, #map, #charts, #navigation {
+h1, h3, footer {
+    text-align: center;
+}
+
+#map, #charts, #wireframe, #navigation {
     text-align: center;
 }
 
