@@ -1,11 +1,3 @@
-#navigation{
-    text-align: center;
-}
-
-body {
-    text-align: center;
-}
-
-p {
+p, body, #navigation{
     text-align: center;
 }
