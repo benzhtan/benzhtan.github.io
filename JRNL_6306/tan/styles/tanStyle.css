@@ -64,7 +64,7 @@
 
     h1.headline {
         color: #CD395B;
-        font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use font, else if, else if */
+        font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
         font-size: 5em;
         text-align: center;
     }
@@ -80,4 +80,19 @@
         font-size: 18px;
         line-height: 1.8;
         margin-top: 18px;
+    }
+    /* LINKS MUST BE IN THIS ORDER */
+    .container a:link {
+      font-family: "Staff-Bold", "Arial", sans-serif;
+      color: #CD395B;
+    }
+
+    .container a:hover {
+      font-family: "Staff-Bold", "Arial", sans-serif;
+      color: #31463F;
+    }
+
+    .container a:visited {
+      font-family: "Staff-Bold", "Arial", sans-serif;
+      color: #BADEFC;
     }
