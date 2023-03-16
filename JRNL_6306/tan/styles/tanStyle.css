@@ -64,5 +64,5 @@
 
     .headline {
         color: #CD395B;
-        font-family: IvarHeadline-Regular;
+        font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use font, else if, else if */
     }
