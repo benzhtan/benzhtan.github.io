@@ -1,4 +1,4 @@
-p, h1, h3, #navigation{
+h1, h3, #navigation{
     text-align: center;
 }
 
@@ -16,14 +16,15 @@ h2 {
     font-size: larger;
 }
 
-#to-do {
-    margin-left: 30%;
-    margin-right: 30%;
+#table {
+    font-family: monospace;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-hr {
-    margin-left: 10%;
-    margin-right: 10%;
+td, th {
+    border: 1px solid #000;
+    text-align: left;
 }
 
 footer {
