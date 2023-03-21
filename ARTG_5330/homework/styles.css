@@ -1,11 +1,8 @@
-#navigation{
+p, h1, #navigation{
     text-align: center;
 }
 
 #assignments {
-    text-align: center;
-}
-
-p {
-    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
 }
