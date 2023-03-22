@@ -68,11 +68,20 @@ function dataJoin(data) {
 
     // Event callbacks.
     g.on('click', (event, d) => {
-        // TO DO
+        const index = d.id;
+        const other = index === 0 ? 1 : 0;
+        counters[index].val = Math.min(++counters[index].val, LIMIT-1);
+        counters[other].val = LIMIT - counters[index].val;
+
+        dataJoin(counters);
     });
-      
+    
+    // reset counters
     g.on('dblclick', (event, d) => {
-        // TO DO
+        counters[0].val = 1;
+        counters[1].val = 9;
+
+        dataJoin(counters);
     });
 
 }
