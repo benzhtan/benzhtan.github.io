@@ -60,39 +60,71 @@
    /* HIGHLIGHTER #EBF952 */
    /* GOLD        #FBC24C */
 
-    /* ------------------ 230315 CLASS WORK ------------------ */
+/* ------------------ 230315 CLASS WORK ------------------ */
 
-    h1.headline {
-        color: #CD395B;
-        font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
-        font-size: 5em;
-        text-align: center;
-    }
+h1.headline {
+    color: #CD395B;
+    font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
+    font-size: 5em;
+    text-align: center;
+}
 
-    h2.headline {
-        color: #1C1C1C;
-        font-size: 2em;
-        text-align: center;
-    }
+h2.headline {
+    color: #1C1C1C;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -50px;
+}
 
-    .container p {
-        font-family: "Georgia", serif;
-        font-size: 18px;
-        line-height: 1.8;
-        margin-top: 18px;
-    }
-    /* LINKS MUST BE IN THIS ORDER */
-    .container a:link {
-      font-family: "Staff-Bold", "Arial", sans-serif;
-      color: #CD395B;
-    }
+.container p {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 18px;
+}
+/* LINKS MUST BE IN THIS ORDER */
+.container a:link {
+  font-family: "Staff-Bold", "Arial", sans-serif;
+  color: #CD395B;
+}
 
-    .container a:hover {
-      font-family: "Staff-Bold", "Arial", sans-serif;
-      color: #31463F;
-    }
+.container a:hover {
+  font-family: "Staff-Bold", "Arial", sans-serif;
+  color: #31463F;
+}
 
-    .container a:visited {
-      font-family: "Staff-Bold", "Arial", sans-serif;
-      color: #BADEFC;
-    }
+.container a:visited {
+  font-family: "Staff-Bold", "Arial", sans-serif;
+  color: #BADEFC;
+}
+
+.container {
+  width: 50%;
+  margin:0 auto 0 auto;
+}
+
+blockquote.quote {
+  font-size: 24px;
+  font-family: "Staff-Bold", "Arial", "san-serif";
+  width: 50%;
+  background-color: #F6F2E1;
+  padding: 30px;
+  float:left;
+  margin-left: 0px;
+  margin-right: 25px;
+}
+
+figure.round {
+  margin-left: 0;
+  float: left;
+}
+
+figure.round img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
