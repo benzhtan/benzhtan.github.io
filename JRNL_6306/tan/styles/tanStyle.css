@@ -127,4 +127,5 @@ figure.round img {
 .photoGrid {
   display: grid;
   grid-template-columns: auto auto;
+  grid-column-gap: 50px;
 }
