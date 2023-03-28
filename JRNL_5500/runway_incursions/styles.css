@@ -1,0 +1,23 @@
+footer {
+    text-align: center;
+}
+
+/* hr {
+    margin:0% 20% 0 20%;
+} */
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1.headline {
+    font-size: 5em;
+    text-align: center;
+}
+
+h2.headline {
+    font-size: 2em;
+    text-align: center;
+    margin-top: -50px;
+}
