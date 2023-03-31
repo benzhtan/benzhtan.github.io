@@ -61,18 +61,33 @@
 
 /* ------------------ 230315 CLASS WORK ------------------ */
 
-h1.headline {
+@media only screen and (max-width: 600px) {
+  /* For mobile */
+  h1.headline {
+    color: #CD395B;
+    font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
+    font-size: 2em;
+    text-align: center;
+  }
+
+} 
+
+@media only screen and (min-width: 601px) {
+  /* For mobile */
+  h1.headline {
     color: #CD395B;
     font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
     font-size: 5em;
     text-align: center;
-}
+  }
+} 
+
 
 h2.headline {
     color: #1C1C1C;
     font-size: 2em;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -5%;
 }
 
 .container p {
@@ -81,6 +96,7 @@ h2.headline {
     line-height: 1.8;
     margin-top: 18px;
 }
+
 /* LINKS MUST BE IN THIS ORDER */
 .container a:link {
   font-family: "Staff-Bold", "Arial", sans-serif;
@@ -101,6 +117,28 @@ h2.headline {
   width: 50%;
   margin:0 auto 0 auto;
 }
+
+@media only screen and (max-width: 600px) {
+  /* For mobile */
+
+  .container {
+    width: 100%;
+    margin:0 auto 0 auto;
+  }
+  .photoGrid {
+    display: block;
+  }  
+} 
+
+@media only screen and (min-width: 601px) {
+  /* For mobile */
+  
+  .container {
+    width: 50%;
+    margin:0 auto 0 auto;
+    }
+  }
+
 
 blockquote.quote {
   font-size: 24px;
