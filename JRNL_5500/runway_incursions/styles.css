@@ -3,16 +3,30 @@ body {
     padding: 0;
 }
 
-img {
-    width: 100%;
+.lede {
+    position: relative;
 }
 
-#lede_copy {
-    float: right;
-    height: 50%;
-    width: 50%;
-    color: chartreuse;
-    background-color: deeppink;
+#lede_copy-1 {
+    position:absolute;
+    top: 10%;
+    right: 5%;
+    width: 35%;
+    background-color: aquamarine;
+    color:darkviolet;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#lede_copy-2 {
+    position:absolute;
+    top: 40%;
+    right: 5%;
+    width: 35%;
+    background-color:darkorange;
+    color:blue;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 footer {
