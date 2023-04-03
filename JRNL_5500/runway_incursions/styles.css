@@ -1,5 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 img {
     width: 100%;
+}
+
+#lede_copy {
+    float: right;
+    height: 50%;
+    width: 50%;
+    color: chartreuse;
+    background-color: deeppink;
 }
 
 footer {
