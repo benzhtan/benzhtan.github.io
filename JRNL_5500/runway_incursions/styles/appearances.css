@@ -3,11 +3,11 @@ body {
     padding: 0;
 }
 
-.scrolly_1 {
+img {
     position: relative;
 }
 
-#lede_1 {
+#step_1 {
     position:absolute;
     top: 10%;
     right: 5%;
@@ -18,7 +18,7 @@ body {
     padding-right: 5px;
 }
 
-#lede_2 {
+#step_2 {
     position:absolute;
     top: 40%;
     right: 5%;

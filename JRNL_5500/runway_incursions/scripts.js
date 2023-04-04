@@ -1,8 +1,5 @@
 var body = document.querySelector("body");
-var lead_scrolly = body.querySelector(.scrolly_1);
-var body_scrolly = body.querySelector(.scrolly_2);
-var sticky = scrolly.querySelector("sticky");
-var article = sticky.querySelector("article");
+var scrolly = body.querySelector(.scrolly);
 var steps = article.querySelectorAll(".step");
 
 var scroller = scrollama();
