@@ -1,0 +1,45 @@
+/* --------------  OVERALL SITE STYLES ------------------------------ */
+.body {
+    width:100%;
+    color: #1c1c1c;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width:600px) {
+    /* FULL-WIDTH FOR MOBILE */
+.footer {
+    background-color: #F6F2E1;
+    padding: 25px 50px;
+    display:block;
+    margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width:601px) {
+        /* SPLIT INTO THREE COLUMNS FOR LARGER SCREENS */
+.footer {
+    background-color: #F6F2E1;
+    padding: 25px 50px;
+    display:grid;
+    grid-template-columns: 33% 12% 12% ;
+    grid-column-gap: 4em;
+    margin-top: 50px;
+    }
+}
+.footer img {
+    width: 50%;
+}
+.footer .boilerplate p {
+    font-family: "IvarText-Regular","TimesNewRoman",serif;
+    font-size: 12px;
+    line-height: 1.8;
+}
+.footer .footerbold p {
+    font-family: "Staff-Bold","Arial-Bold",sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+}
