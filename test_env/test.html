@@ -11,43 +11,52 @@
 
     <body>
         <h1>Test Environment</h1>
+        <!--
+            <h3>Testing Shuang's bar chart</h3>
+            <canvas id="myChart"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-        <h3>Testing Shuang's bar chart</h3>
-        <canvas id="myChart"></canvas>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        // The type of chart we want to create
+                        type: 'bar',
 
-            <script>
-                var ctx = document.getElementById('myChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'bar',
+                        // The data for our dataset
+                        data: {
+                            labels: ['Mediation', 'Comparison Group'],
+                            datasets: [{
+                                label: 'percentage',
+                                backgroundColor: ['rgb(120, 161, 230)', 'rgb(62, 101, 168)'],
+                                data: [19,28]
+                            }]
+                        },
 
-                    // The data for our dataset
-                    data: {
-                        labels: ['Mediation', 'Comparison Group'],
-                        datasets: [{
-                            label: 'percentage',
-                            backgroundColor: ['rgb(120, 161, 230)', 'rgb(62, 101, 168)'],
-                            data: [19,28]
-                        }]
-                    },
+                        // Configuration options go here
+                        options: {
+                            barPercentage: 0.5,
+                    categoryPercentage: 0.8
+                        }
 
-                    // Configuration options go here
-                    options: {
-                        barPercentage: 0.5,
-                categoryPercentage: 0.8
-                    }
+                    });
 
-                });
+                </script>
 
-            </script>
- <!-- 
-        <div class="speech-bubble">
-            <audio controls src="Susan_clip1.mp3" style="width:100%"></audio>
-            <p class="speech-bubble-quote">&ldquo; If you think about the way our criminal legal system currently works, there is little to no room within the structure of a court case for the victims.&rdquo;</p>
-            <p class="quotsigner">Susan Maze-Rothstein, Co-director of the Center for Restorative Justice at Suffolk University</p>
+            <div class="speech-bubble">
+                <audio controls src="Susan_clip1.mp3" style="width:100%"></audio>
+                <p class="speech-bubble-quote">&ldquo; If you think about the way our criminal legal system currently works, there is little to no room within the structure of a court case for the victims.&rdquo;</p>
+                <p class="quotsigner">Susan Maze-Rothstein, Co-director of the Center for Restorative Justice at Suffolk University</p>
+            </div>
+        -->
+
+        <!--Flourish embed test-->
+
+        <div class=“chart” id=“probation_stacked_bars”>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/13320502">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
         </div>
--->
+        
     </body>
     <br>
     <hr>
