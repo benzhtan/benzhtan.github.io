@@ -50,57 +50,28 @@ function createHierarchicalLayout(data) {
      *  The following lines of code handle HIERARCHICAL LAYOUT-SPECIFIC methods.
      */
 
-    let treeLayout = d3.tree()
+    let circlePackingLayout = d3.pack()
                        .size([width, height - 50]);
 
-    treeLayout(root);
+    circlePackingLayout(root);
 
     /**
      *  The following lines of code handle VISUALIZATION-SPECIFIC methods.
      */
 
-    svg.append("g")
-       .selectAll("line")
-       .data(root.links())
-       .join("line")
-        // coordinates of start of line. D3 refers to these as "source"
-        .attr("x1", function(d){return d.source.x; })
-        .attr("y1", function(d){return d.source.y; })
-        // coordinates of end of line. D3 refers to these as "targets"
-        .attr("x2", function(d){return d.target.x; })
-        .attr("y2", function(d){return d.target.y; })
-        .style("stroke-width", 6);
-    
+    var nodes = svg.append("g")
+                   .selectAll("g")
+                   .data(root.descendants())
+                   .join("g")
+                   .attr("transform", function (d) {
+                        return "translate(" + [d.x, d.y] + ")";
+                    })
+                   
+    nodes.append("circle")
+         .attr("r", function(d) {
+            return d.r;
+         })
+
     //Connecting nodes of the tree with lines
-    svg.append("g")
-        .selectAll("circle")
-        .data(root.descendants())
-        .join("circle")
-        .attr("cx", function(d){return d.x; })
-        .attr("cy", function(d){return d.y; })
-        .attr("r", 8);
-
-    //Add text to nodes
-    svg.append("g")
-       .selectAll("text.label")
-       .data(root.descendants())
-       .classed("label", true)
-       .join("text")
-       .attr("x", function(d){return d.x; })
-       .attr("x", function(d){return d.y; })
-       .text(function(d) {
-            return d.data[0];
-        });
-
-    svg.append("g")
-       .selectAll("text.count-label")
-       .data(root.descendants())
-       .classed("count-label", true)
-       .join("text")
-            .attr("x", function(d) { return d.x; })
-            .attr("x", function(d) { return d.y; })
-                .text(function(d) {
-                    return d.data[1];
-                });
 
 }
