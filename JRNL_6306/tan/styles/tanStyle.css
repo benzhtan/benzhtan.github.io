@@ -1,4 +1,4 @@
-/* --------------  LOAD FONTS FROM SERVER ------------------------------ */
+/* ------------------------------  LOAD FONTS FROM SERVER ------------------------------ */
 /* ---- The font-family defines the name that will be used in CSS ------ */ /* --------along with a source with location and  font file name ---- */
 @font-face {
     font-family: "IvarHeadline-Regular";
@@ -73,7 +73,7 @@
 } 
 
 @media only screen and (min-width: 601px) {
-  /* For mobile */
+  /* For everything else */
   h1.headline {
     color: #CD395B;
     font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
@@ -87,7 +87,6 @@ h2.headline {
     color: #1C1C1C;
     font-size: 2em;
     text-align: center;
-    margin-top: -5%;
 }
 
 .container p {
@@ -131,7 +130,7 @@ h2.headline {
 } 
 
 @media only screen and (min-width: 601px) {
-  /* For mobile */
+  /* For everything else */
   
   .container {
     width: 50%;
@@ -139,16 +138,29 @@ h2.headline {
     }
   }
 
+@media only screen and (max-width:600px) {
+    blockquote.quote {
+      font-size: 24px;
+      font-family: "Staff-Bold", "Arial", "san-serif";
+      width: 100%;
+      background-color: #F6F2E1;
+      color: red;
+      float:none;
+      margin: 0%;
+    }
+}
 
-blockquote.quote {
-  font-size: 24px;
-  font-family: "Staff-Bold", "Arial", "san-serif";
-  width: 50%;
-  background-color: #F6F2E1;
-  padding: 30px;
-  float:left;
-  margin-left: 0px;
-  margin-right: 25px;
+@media only screen and (min-width:601px) {
+  blockquote.quote {
+    font-size: 24px;
+    font-family: "Staff-Bold", "Arial", "san-serif";
+    width: 50%;
+    background-color: #F6F2E1;
+    color: blue;
+    float:left;
+    margin-left: 0px;
+    margin-right: 25px;
+  }
 }
 
 figure.round {

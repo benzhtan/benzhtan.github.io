@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test webpage</title>
+        <title>Test env</title>
         <meta charset="utf-8"/>
-        <meta name="description" content="A sandbox to test code">
-        <link rel="stylesheet" type="text/css" href="styles/test_styles.css">
-        <script src="scripts.js"></script>
+        <meta name="description" content="Test environment">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        
         <meta name="author" content="Benjamin ZH Tan">
     </head>
 
     <body>
-        <h1>Test Environment</h1>
-        <!--
-            <h3>Testing Shuang's bar chart</h3>
-            <canvas id="myChart"></canvas>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                <script>
-                    var ctx = document.getElementById('myChart').getContext('2d');
-                    var chart = new Chart(ctx, {
-                        // The type of chart we want to create
-                        type: 'bar',
-
-                        // The data for our dataset
-                        data: {
-                            labels: ['Mediation', 'Comparison Group'],
-                            datasets: [{
-                                label: 'percentage',
-                                backgroundColor: ['rgb(120, 161, 230)', 'rgb(62, 101, 168)'],
-                                data: [19,28]
-                            }]
-                        },
-
-                        // Configuration options go here
-                        options: {
-                            barPercentage: 0.5,
-                    categoryPercentage: 0.8
-                        }
-
-                    });
-
-                </script>
-
-            <div class="speech-bubble">
-                <audio controls src="Susan_clip1.mp3" style="width:100%"></audio>
-                <p class="speech-bubble-quote">&ldquo; If you think about the way our criminal legal system currently works, there is little to no room within the structure of a court case for the victims.&rdquo;</p>
-                <p class="quotsigner">Susan Maze-Rothstein, Co-director of the Center for Restorative Justice at Suffolk University</p>
-            </div>
-        -->
-
-        <!--Flourish embed test-->
-
-        <div class=“chart” id=“probation_stacked_bars”>
-            <div class="flourish-embed flourish-chart" data-src="visualisation/13320502">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-            </div>
+        <img src="assets/bos_mockup_snapshot.jpeg" alt="Slow movie of aircraft movement at Boston's Logan airport" style="width:100%">
+        <div class="grafs">
+            <p>1. This is a paragraph.</p>
         </div>
-        
+
+        <div class="grafs">
+            <p>2. This is another paragraph.</p>
+        </div>
+
+        <div class="grafs">
+            <h1>THIS IS A HEADLINE</h1>
+            <h2><i>This is a subhed</i></h2>
+        </div>
+
+        <div class="chart" id="bar">
+            A bar chart goes here
+        </div>
+
+        <div class="grafs">
+            <p>n. This is an explainer for the bar chart.</p>
+        </div>
+
+        <div class="chart" id="heatmap">
+            <img src="assets/heatmap_mockup.png" alt="Heatmap of runway incursions in the US between 2002-2022.">
+        </div>
+
+        <div class="grafs">
+            <p>n. This is an explainer for the heatmap.</p>
+        </div>
+
+        <div class="map" id="hnl">
+            Map of HNL goes here. Potentially an svg img from ai2html
+        </div>
+
+        <div class="grafs">
+            <p>n.1.start This is the first graf of an explanation of the seven factors that influence runway incursions.</p>
+        </div>
+
+        <div class="grafs">
+            <p>n.1.end This is the last graf of an explanation of the seven factors that influence runway incursions.</p>
+        </div>
+
+        <div class="map" id="bos">
+            Map of BOS goes here. Potentially an svg img from ai2html
+        </div>
+
+        <div class="map" id="mdw">
+            Map of MDW goes here. Potentially an svg img from ai2html
+        </div>
+
+        <div class="map" id="iad">
+            Map of IAD goes here. Potentially an svg img from ai2html
+        </div>
+
+        <div class="grafs">
+            <p>n. This is a graf explaining IAD's runway layout.</p>
+        </div>
+
+        <div class="map" id="den">
+            Map of DEN goes here. Potentially an svg img from ai2html
+        </div>
+
+        <div class="grafs">
+            <p>n. This is a graf explaining DEN's runway layout.</p>
+        </div>
+
+        <div class="map" id="mco">
+            Map of MCO goes here. Potentially an svg img from ai2html
+        </div>
+
+        <div class="grafs">
+            <p>n. This is a graf explaining MCO's runway layout.</p>
+        </div>
+
+        <div class="map" id="ord_comparative">
+            Map of ORD goes here. Slideover comparing old and new runway layout.
+        </div>
+
+        <div class="grafs">
+            <p>n. This is a graf explaining ORD runway realignment.</p>
+        </div>
+
+
     </body>
-    <br>
-    <hr>
-    <br>
-    <footer>
-        <div id="navigation">
-            <form action="https://benzhtan.github.io/JRNL_5500/index.html">
-                <input type="submit" value="&lt; Back to CDS landing page" />
-            <br>
-            <form action="https://benzhtan.github.io/index.html">
-                <input type="submit" value="&lt;&lt; Back to Home" />
-        </div>
-        <br>
-        &copy; Benjamin ZH Tan 2023
-    </footer>
 </html>

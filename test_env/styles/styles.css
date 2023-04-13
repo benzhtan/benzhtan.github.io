@@ -1,0 +1,43 @@
+.lede {
+    /*sizing
+    width:50%;
+    /*positioning
+    position: relative;
+    float: right;
+    content*/
+    text-align: right;
+    color:red;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    }
+
+/*--------------------------------------TESTING--------------------------------------*/
+
+body {
+    margin:0%;
+    background-color: black;
+}
+.grafs {
+    color:red;
+    background-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.chart {
+    color:purple;
+    background-color: olivedrab;
+    border-width: 2px;
+    border-style: solid;
+    border-color: firebrick;
+}
+
+.map {
+    color:orchid;
+    background-color: lightcyan;
+    border-width: 2px;
+    border-style: solid;
+    border-color: slateblue;
+}
