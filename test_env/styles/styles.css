@@ -18,6 +18,13 @@ body {
     margin:0%;
     background-color: black;
 }
+
+.headline {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
+
 .grafs {
     color:red;
     background-color: aqua;
