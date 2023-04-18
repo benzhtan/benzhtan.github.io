@@ -12,6 +12,16 @@
     border-color: blue;
     }
 
+hr {
+    color: gray;
+}
+
+credit {
+    color: white;
+    text-align: center;
+}
+
+
 /*--------------------------------------TESTING--------------------------------------*/
 
 body {
