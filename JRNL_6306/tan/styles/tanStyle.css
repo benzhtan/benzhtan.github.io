@@ -3,53 +3,64 @@
 @font-face {
     font-family: "IvarHeadline-Regular";
      src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Regular.woff2);
-   }  
-   @font-face {
-    font-family: "IvarHeadline-Italic";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
-   } 
-   @font-face {
-    font-family: "IvarHeadline-Bold";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Bold.woff2);
-   }  
-   @font-face {
-    font-family: "IvarHeadline-BoldItalic";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
-   } 
-   @font-face {
-    font-family: "IvarText-Regular";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
-   } 
-   @font-face {
-    font-family: "IvarText-Italic";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
-   }
-   @font-face {
-    font-family: "IvarText-Bold";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Bold.woff2);
-   }
-   @font-face {
-    font-family: "Staff-Regular";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Regular.woff2);
-   }  
-   @font-face {
-    font-family: "Staff-Italic";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Italic.woff2);
-   } 
-   @font-face {
-    font-family: "Staff-Bold";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Bold.woff2);
-   }  
-   @font-face {
-    font-family: "Staff-BoldItalic";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-BoldItalic.woff2);
-   } 
-   @font-face {
-    font-family: "Carrie-Regular";
-     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/VTCCarrie-Regular.woff2);
    }
 
-   /* ------------------ EMANCIPATOR COLORS ------------------ */
+@font-face {
+font-family: "IvarHeadline-Italic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
+}
+
+@font-face {
+font-family: "IvarHeadline-Bold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Bold.woff2);
+}
+
+@font-face {
+font-family: "IvarHeadline-BoldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
+}
+
+@font-face {
+font-family: "IvarText-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
+}
+
+@font-face {
+font-family: "IvarText-Italic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
+}
+
+@font-face {
+font-family: "IvarText-Bold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Bold.woff2);
+}
+
+@font-face {
+font-family: "Staff-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Regular.woff2);
+}
+
+@font-face {
+font-family: "Staff-Italic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Italic.woff2);
+}
+
+@font-face {
+font-family: "Staff-Bold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Bold.woff2);
+}
+
+@font-face {
+font-family: "Staff-BoldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-BoldItalic.woff2);
+}
+
+@font-face {
+font-family: "Carrie-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/VTCCarrie-Regular.woff2);
+}
+
+/* ------------------ EMANCIPATOR COLORS ------------------ */
    /* FOREST      #31463F */
    /* ROSE        #CD395B */
    /* PINK        #F6B0A0 */
@@ -59,7 +70,7 @@
    /* HIGHLIGHTER #EBF952 */
    /* GOLD        #FBC24C */
 
-/* ------------------ 230315 CLASS WORK ------------------ */
+/* ------------------------------------------- MOBILE RESPONSIVE DESIGN ------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
   /* For mobile */
@@ -69,8 +80,25 @@
     font-size: 2em;
     text-align: center;
   }
+  .container {
+    width: 100%;
+    margin:0 auto 0 auto;
+  }
 
-} 
+  .photoGrid {
+    display: block;
+  }
+
+  blockquote.quote {
+    font-size: 24px;
+    font-family: "Staff-Bold", "Arial", "san-serif";
+    width: 100%;
+    background-color: #F6F2E1;
+    color: red;
+    float:none;
+    margin: 0%;
+  }
+}
 
 @media only screen and (min-width: 601px) {
   /* For everything else */
@@ -80,23 +108,25 @@
     font-size: 5em;
     text-align: center;
   }
-} 
 
+  .container {
+    width: 50%;
+    margin:0 auto 0 auto;
+    }
 
-h2.headline {
-    color: #1C1C1C;
-    font-size: 2em;
-    text-align: center;
+  blockquote.quote {
+    font-size: 24px;
+    font-family: "Staff-Bold", "Arial", "san-serif";
+    width: 50%;
+    background-color: #F6F2E1;
+    color: blue;
+    float:left;
+    margin-left: 0px;
+    margin-right: 25px;
+  }
 }
 
-.container p {
-    font-family: "Georgia", serif;
-    font-size: 18px;
-    line-height: 1.8;
-    margin-top: 18px;
-}
-
-/* LINKS MUST BE IN THIS ORDER */
+/* ------------------------------------------- LINKS MUST BE IN THIS ORDE ------------------------------------------- */
 .container a:link {
   font-family: "Staff-Bold", "Arial", sans-serif;
   color: #CD395B;
@@ -110,71 +140,4 @@ h2.headline {
 .container a:visited {
   font-family: "Staff-Bold", "Arial", sans-serif;
   color: #BADEFC;
-}
-
-.container {
-  width: 50%;
-  margin:0 auto 0 auto;
-}
-
-@media only screen and (max-width: 600px) {
-  /* For mobile */
-
-  .container {
-    width: 100%;
-    margin:0 auto 0 auto;
-  }
-  .photoGrid {
-    display: block;
-  }  
-} 
-
-@media only screen and (min-width: 601px) {
-  /* For everything else */
-  
-  .container {
-    width: 50%;
-    margin:0 auto 0 auto;
-    }
-  }
-
-@media only screen and (max-width:600px) {
-    blockquote.quote {
-      font-size: 24px;
-      font-family: "Staff-Bold", "Arial", "san-serif";
-      width: 100%;
-      background-color: #F6F2E1;
-      color: red;
-      float:none;
-      margin: 0%;
-    }
-}
-
-@media only screen and (min-width:601px) {
-  blockquote.quote {
-    font-size: 24px;
-    font-family: "Staff-Bold", "Arial", "san-serif";
-    width: 50%;
-    background-color: #F6F2E1;
-    color: blue;
-    float:left;
-    margin-left: 0px;
-    margin-right: 25px;
-  }
-}
-
-figure.round {
-  margin-left: 0;
-  float: left;
-}
-
-figure.round img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.photoGrid {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 50px;
 }

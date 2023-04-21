@@ -53,14 +53,3 @@
         font-size: 12px;
         line-height: 1.8;
     }
-    /* --------------  OVERALL SITE STYLES ------------------------------ */
-    .body {
-        width:100%;
-        color: #1c1c1c;
-    }
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
