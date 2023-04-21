@@ -1,5 +1,7 @@
-/*------------------- HEADER STYLES---------------------------------------------------*/
+/* --------------------------------------------------- HEADER STYLES --------------------------------------------------- */
+
 /* move header down */
+
 .header {
     padding: 10px 0 0px 0;
       margin: 0;
@@ -7,49 +9,131 @@
         height: 70px;
         position: sticky;
         top:0;
+}
+
+.emancipator-description {
+    background-color: #BADEFC;
+    padding:11px 15px;
+    margin: 0 20px 50px 20px;
+    height: 50px;
+}
+
+.emancipator-description p {
+        font-family: "Staff-Bold","Arial",sans-serif;
+        font-size: 15px;
+        margin-top: -1px;
+}
+
+/* -------------------------------------------------- FOOTER STYLES -------------------------------------------------- */
+
+@media only screen and (max-width:600px) {
+    /* FULL-WIDTH FOR MOBILE */
+.footer {
+    background-color: #F6F2E1;
+    padding: 25px 50px;
+    display:block;
+    margin-top: 50px;
     }
-    .emancipator-description {
-        background-color: #BADEFC;
-        padding:11px 15px;
-        margin: 0 20px 50px 20px;
-        height: 50px;
+}
+
+@media only screen and (min-width:601px) {
+        /* SPLIT INTO THREE COLUMNS FOR LARGER SCREENS */
+.footer {
+    background-color: #F6F2E1;
+    padding: 25px 50px;
+    display:grid;
+    grid-template-columns: 33% 12% 12% ;
+    grid-column-gap: 4em;
+    margin-top: 50px;
     }
-    .emancipator-description p {
-            font-family: "Staff-Bold","Arial",sans-serif;
-            font-size: 15px;
-            margin-top: -1px;
-    }
-    /*------------------- FOOTER STYLES ---------------------------------------------------*/
-    @media only screen and (max-width:600px) {
-        /* FULL-WIDTH FOR MOBILE */
-    .footer {
-        background-color: #F6F2E1;
-        padding: 25px 50px;
-        display:block;
-        margin-top: 50px;
-        }
-    }
-    @media only screen and (min-width:601px) {
-            /* SPLIT INTO THREE COLUMNS FOR LARGER SCREENS */
-    .footer {
-        background-color: #F6F2E1;
-        padding: 25px 50px;
-        display:grid;
-        grid-template-columns: 33% 12% 12% ;
-        grid-column-gap: 4em;
-        margin-top: 50px;
-        }
-    }
-    .footer img {
-        width: 50%;
-    }
-    .footer .boilerplate p {
-        font-family: "IvarText-Regular","TimesNewRoman",serif;
-        font-size: 12px;
-        line-height: 1.8;
-    }
-    .footer .footerbold p {
-        font-family: "Staff-Bold","Arial-Bold",sans-serif;
-        font-size: 12px;
-        line-height: 1.8;
-    }
+}
+
+.footer img {
+    width: 50%;
+}
+
+.footer .boilerplate p {
+    font-family: "IvarText-Regular","TimesNewRoman",serif;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.footer .footerbold p {
+    font-family: "Staff-Bold","Arial-Bold",sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* --------------------------------------------------------- FONTS --------------------------------------------------------- */
+
+@font-face {
+    font-family: "IvarHeadline-Regular";
+     src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Regular.woff2);
+   }
+
+@font-face {
+font-family: "IvarHeadline-Italic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
+}
+
+@font-face {
+font-family: "IvarHeadline-Bold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Bold.woff2);
+}
+
+@font-face {
+font-family: "IvarHeadline-BoldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarHeadline-Italic.woff2);
+}
+
+@font-face {
+font-family: "IvarText-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
+}
+
+@font-face {
+font-family: "IvarText-Italic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Regular.woff2);
+}
+
+@font-face {
+font-family: "IvarText-Bold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/IvarText-Bold.woff2);
+}
+
+@font-face {
+font-family: "Staff-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Regular.woff2);
+}
+
+@font-face {
+font-family: "Staff-Italic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Italic.woff2);
+}
+
+@font-face {
+font-family: "Staff-Bold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-Bold.woff2);
+}
+
+@font-face {
+font-family: "Staff-BoldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/Staff-BoldItalic.woff2);
+}
+
+@font-face {
+font-family: "Carrie-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/VTCCarrie-Regular.woff2);
+}
+
+/* ------------------------------------------------ EMANCIPATOR COLORS ------------------------------------------------ */
+
+/* FOREST      #31463F */
+/* ROSE        #CD395B */
+/* PINK        #F6B0A0 */
+/* PUTTY       #F6F2E1 */
+/* SKY         #BADEFC */
+/* BLACK       #1C1C1C */
+/* HIGHLIGHTER #EBF952 */
+/* GOLD        #FBC24C */
+
