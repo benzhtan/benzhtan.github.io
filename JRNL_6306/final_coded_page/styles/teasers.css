@@ -8,28 +8,33 @@ font-family:"Staff-Bold","Arial-Bold",sans-serif;
 text-align: center;
 margin: 50px auto 30px auto;
 }
+
 .team1teaser {
         background-image: url("https://mediainnovation.camd.northeastern.edu/2023/restorativejustice/images/thumbnail-team1.png");
         background-repeat: no-repeat;
     background-size:cover;
   background-position: center; 
     min-height: 200px;
-    }
+}
+
 .team2teaser {
         background-image: url("https://mediainnovation.camd.northeastern.edu/2023/restorativejustice/images/thumbnail-team2-turner.png");
         background-repeat: no-repeat;
     background-size:cover;
   background-position: center; 
     min-height: 200px;
-    }
+}
+
 .team3teaser {
         background-image: url("https://mediainnovation.camd.northeastern.edu/2023/restorativejustice/images/thumbnail-team3.jpg");
         background-repeat: no-repeat;
     background-size:cover;
   background-position: center; 
     min-height: 200px;
-    }
+}
+
 a:link {text-decoration: none}
+
 /* --------------- TEASER FOR MOBILE --------------------------- */
 @media only screen and (max-width: 600px) {
 .teaserwrapper {
