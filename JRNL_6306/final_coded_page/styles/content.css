@@ -4,8 +4,27 @@ p#content {
 
 /* -------------------------------------------- FOR MOBILE AND TABLET -------------------------------------------- */
 @media only screen and (MAX-width: 600px) {
+    html, body {
+        margin:0;
+        height:100%;
+    }
+
     article {
-        margin: 0% 0% 0% 0%;
+        margin: 0% 5% 0% 5%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .graphic#VT-CoSA-recidivism {
+        width: 100%;
+    }
+
+    .interactive#search-tool {
+        width: 100%;
     }
 }
 
@@ -17,12 +36,27 @@ p#content {
     }
 
     article {
-        margin: 0% 20% 0% 20%;
+        margin: 0% 15% 0% 15%;
+    }
+
+    .graphic#pop-out {
+        width: 40%;
+        margin: 2.5%;
+        float: right;
     }
 
     img {
         width: 100%;
         height: auto;
+    }
 
+    .graphic#VT-CoSA-recidivism {
+        width: 40%;
+        margin: 2.5%;
+        float: right;
+    }
+
+    .interactive#search-tool {
+        width: 0% 10% 0% 10%;
     }
 }

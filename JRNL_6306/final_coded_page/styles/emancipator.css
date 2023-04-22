@@ -126,6 +126,23 @@ font-family: "Carrie-Regular";
   src: url(https://mediainnovation.camd.northeastern.edu/2022/emancipator/fonts/VTCCarrie-Regular.woff2);
 }
 
+/* --------------------------------------------------- LINK STYLING --------------------------------------------------- */
+
+a:link {
+  font-family: "Staff-Bold", "Arial", sans-serif;
+  color: #CD395B;
+}
+
+a:hover {
+  font-family: "Staff-Bold", "Arial", sans-serif;
+  color: #31463F;
+}
+
+a:visited {
+  font-family: "Staff-Bold", "Arial", sans-serif;
+  color: #BADEFC;
+}
+
 /* ------------------------------------------------ EMANCIPATOR COLORS ------------------------------------------------ */
 
 /* FOREST      #31463F */
@@ -136,6 +153,8 @@ font-family: "Carrie-Regular";
 /* BLACK       #1C1C1C */
 /* HIGHLIGHTER #EBF952 */
 /* GOLD        #FBC24C */
+
+/* ------------------------------------------------------ TESTING ------------------------------------------------------- */
 
 p#emancipator {
     color: green;
