@@ -1,8 +1,3 @@
-// One trick to organizing code is to put related functions inside of an object,
-// so they are under the same "namespace". This helps maek readable code that is
-// easier to maintain in the long term.
-// TODO: replace use of `document.getElementByXXX` with `d3.select` so it is more readable
-
 /* globals scrollama */
 
 const Project = {};
