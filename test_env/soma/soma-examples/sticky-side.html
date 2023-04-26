@@ -118,7 +118,6 @@
     </main>
 
     <!-- <div class='debug'></div> -->
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <script>
       // using d3 for convenience
@@ -150,7 +149,7 @@
           .setup({
             step: "#scrolly article .step",
             offset: 0.33,
-            debug: true
+            debug: false
           })
           .onStepEnter(handleStepEnter);
 
