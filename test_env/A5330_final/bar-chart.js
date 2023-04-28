@@ -34,7 +34,7 @@
 
 */
 
-d3.csv("./data/gapminder.csv").then(function(data) {
+d3.csv("gapminder.csv").then(function(data) {
 
     /*
     1. DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
