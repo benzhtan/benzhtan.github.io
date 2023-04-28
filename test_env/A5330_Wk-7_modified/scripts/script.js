@@ -34,7 +34,7 @@
 
 */
 
-d3.csv("./data/gapminder.csv").then(function(data) {
+d3.csv("./data/visits_by_year").then(function(data) {
 
     /*
     1. DEFINE DIMENSIONS OF SVG + CREATE SVG CANVAS
@@ -67,7 +67,6 @@ d3.csv("./data/gapminder.csv").then(function(data) {
     const height = document.querySelector("#chart").clientHeight;
 
     // Initializing the viewport of the SVG canvas
-    // An SVG Canvas's Viewport has a "width" and "height"
     const svg = d3.select("#chart")
         .append("svg")
         .attr("width", width)
@@ -130,7 +129,7 @@ d3.csv("./data/gapminder.csv").then(function(data) {
 
     let filtered_data = data.filter(function(d) {
 
-        return d.country === 'United States';
+        return d.Name === 'Total';
 
     });
 
@@ -176,10 +175,10 @@ d3.csv("./data/gapminder.csv").then(function(data) {
 
     */
 
-    const lifeExp = {
+    const visitors = {
         
-        min: d3.min(filtered_data, function(d) { return +d.lifeExp; }),
-        max: d3.max(filtered_data, function(d) { return +d.lifeExp; })
+        min: d3.min(filtered_data, function(d) { return +d.visitors; }),
+        max: d3.max(filtered_data, function(d) { return +d.visitors; })
 
     };
 
@@ -242,12 +241,12 @@ d3.csv("./data/gapminder.csv").then(function(data) {
     };
 
     const xScale = d3.scaleBand()
-        .domain(["1952","1957","1962","1967","1972","1977","1982","1987","1992","1997","2002","2007"])
+        .domain(["2020","2019","2018","2017","2016","2015","2014","2013","2012","2011","2010","2009","2008","2007","2006","2005","2004","2003","2002","2001","2000","1999","1998","1997","1996","1995","1994","1993","1992","1991","1990","1989","1988","1987","1986","1985","1984","1983","1982","1981","1980","1979"])
         .range([margin.left, width - margin.right])
         .padding(0.5);
 
     const yScale = d3.scaleLinear()
-        .domain([50, lifeExp.max])
+        .domain([50, visitors.max])
         .range([height - margin.bottom, margin.top]);
 
     /*
@@ -380,9 +379,9 @@ d3.csv("./data/gapminder.csv").then(function(data) {
         .enter()
         .append("rect")
             .attr("x", function(d) { return xScale(d.year); })
-            .attr("y", function(d) { return yScale(d.lifeExp); })
+            .attr("y", function(d) { return yScale(d.visitors); })
             .attr("width", xScale.bandwidth())
-            .attr("height", function(d) { return height - (margin.bottom + yScale(d.lifeExp)) })
+            .attr("height", function(d) { return height - (margin.bottom + yScale(d.visitors)) })
             .attr("fill", "steelblue");
     
     /*
@@ -421,6 +420,6 @@ d3.csv("./data/gapminder.csv").then(function(data) {
         .attr("transform","rotate(-90)")
         .attr("x", -height/2)
         .attr("y", margin.left/2)
-        .text("Life Expectancy (Years)");
+        .text("Total visitors");
 
 });
