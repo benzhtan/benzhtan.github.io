@@ -1,0 +1,4 @@
+Sources
+ChatGPT poem => https://openai.com/blog/chatgpt/
+Change color fn => https://linuxhint.com/change-text-color-in-javascript/#1
+Generate random color fn => https://css-tricks.com/snippets/javascript/random-hex-color/

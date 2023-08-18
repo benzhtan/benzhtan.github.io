@@ -1,0 +1,79 @@
+
+/* -------------------------------------------- FOR MOBILE AND TABLET -------------------------------------------- */
+@media only screen and (MAX-width: 600px) {
+    html, body {
+        margin:0;
+        height:100%;
+    }
+
+    article {
+        margin: 0% 5% 0% 5%;
+    }
+
+    h1 {
+        color: #CD395B;
+        font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .graphic#VT-CoSA-recidivism {
+        width: 100%;
+    }
+
+    .interactive#search-tool {
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------- FOR TABLET AND DESKTOP -------------------------------------------- */
+@media only screen and (min-width: 601px) {
+    html, body {
+        margin:0;
+        height:100%;
+    }
+
+    article {
+        margin: 0% 20% 0% 20%;
+    }
+
+    h1 {
+        color: #CD395B;
+        font-family: IvarHeadline-Regular, "Georgia", serif; /* logic: use [font], else if, else if */
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .graphic#pop-out {
+        width: 40%;
+        margin: 2.5%;
+        float: right;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .graphic#practitioner {
+        width: 40%;
+        margin: 2.5% 0% 2.5% 2.5%;
+        float: right;
+    }
+
+    .graphic#VT-CoSA-recidivism {
+        width: 40%;
+        margin: 2.5% 0% 2.5% 2.5%;
+        float: right;
+    }
+
+    .interactive#search-tool {
+        width: 0% 10% 0% 10%;
+    }
+}

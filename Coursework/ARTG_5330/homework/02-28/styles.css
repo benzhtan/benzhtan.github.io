@@ -1,0 +1,12 @@
+h1, h3, footer {
+    text-align: center;
+}
+
+#map, #charts, #wireframe, #navigation {
+    text-align: center;
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- NOTE: We are using D3 version 7 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Loads another JavaScript library to work with TopoJSON files -->
+    <script src="https://unpkg.com/topojson-client@3"></script>
+  </head>
+  <body>
+
+    <svg id="viz"> <!--Lack of viewport specification defaults to 300px by 150px-->
+      <!--The rectangle for the background "ocean" color-->
+      <rect id="ocean" x="0" y="0" fill="#8AAAE5" />
+      
+      <!--The map will consist of a group of polygons-->
+      <g id="map"></g>
+    </svg>
+
+    <script src="scripts/script.js"></script>
+
+    <!--Navigation buttons-->
+    <form action="https://benzhtan.github.io/Class_activities/index.html">
+      <input type="submit" value="&lt; Back" />
+    </form>
+
+    <form action="https://benzhtan.github.io/index.html">
+      <input type="submit" value="Back to home" />
+    </form>
+
+  </body>
+</html>
