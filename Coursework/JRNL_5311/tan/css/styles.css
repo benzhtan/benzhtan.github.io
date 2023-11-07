@@ -1,0 +1,33 @@
+.banner-image{
+    position: relative;
+}
+
+#subhed{
+    position: absolute;
+    bottom: 50%;
+    left: 2.5%;
+    font-family: "Le Jeune", Times, serif;
+    font-size: 1em;
+    color: white;
+}
+
+#hedline{
+    position: absolute;
+    bottom: 15%;
+    left: 2.5%;
+    font-family: "Le Jeune", Times, serif;
+    font-size: 5em;
+    color: white;
+}
+
+.byline{
+    margin: 0% 20% 0% 20%;
+    font-family: "Grotzec", Helvetica, sans-serif;
+    color: coral;
+}
+
+.article{
+    margin: 0% 20% 0% 20%;
+    font-family: "Grotzec", Helvetica, sans-serif;
+    color: coral;
+}
