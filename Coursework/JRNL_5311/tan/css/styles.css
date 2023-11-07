@@ -22,7 +22,7 @@
 
 .byline{
     margin: 0% 20% 0% 20%;
-    font-family: "Grotzec", Helvetica, sans-serif;
+    font-family: "Le Jeune", Times, serif;
     color: coral;
 }
 
@@ -30,4 +30,12 @@
     margin: 0% 20% 0% 20%;
     font-family: "Grotzec", Helvetica, sans-serif;
     color: coral;
+}
+
+.dropcap{
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    font-family: "Le Jeune", Times, serif;
+    line-height: 80%;
 }
