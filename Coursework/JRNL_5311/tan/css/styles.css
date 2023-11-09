@@ -28,40 +28,48 @@ figure, body{
 
 /* LINK STYLING – VERY IMPORTANT! */
 a:link{
-    color: blue;
+    color: steelblue;
     text-decoration: none;
 }
 
 a:hover{
-    background-color: red;
+    background-color: orange;
 }
 
-a:active{
+/* a:active{
     background-color: aquamarine;
-}
+} */
 
 a:visited{
-    color: blue;
+    color: steelblue;
 }
 
 .byline{
     margin: 0% 20% 0% 20%;
-    font-family: "LeJeunePoster-Regular", Times, serif;
+    font-family: "Georgia", serif;
 }
 
 .article{
     margin: 0% 20% 0% 20%;
-    font-family: "LeJeunePoster-Regular", Georgia, serif;
+    font-family: "Georgia", serif;
     font-size: 1.25em;
     line-height: 1.25em;
-    letter-spacing: 0.5px;
 }
 
 figcaption{
-    font-family: "LeJeunePoster-Regular", Georgia, serif;
+    font-family: "Georgia", serif;
     font-size: 1em;
     line-height: 1em;
-    letter-spacing: 0.5px;
+}
+
+#leo_stat_map{
+    float: right;
+    margin: 0% 0% 0% 5%;
+}
+
+#rainfall_chart{
+    float: left;
+    margin: 0% 5% 0% 0%;
 }
 
 #blockquote{
@@ -73,7 +81,7 @@ figcaption{
 }
 
 span.dropcap{
-    font-family: "LeJeunePoster-Regular", Georgia, serif;
+    font-family: "Georgia", serif;
     float: left;
     width: 0.7em;
     font-size: 400%;
