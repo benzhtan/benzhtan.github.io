@@ -1,0 +1,23 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* --------------------------------- MY STYLES ----------------------------------------- */
