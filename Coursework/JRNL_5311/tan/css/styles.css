@@ -1,46 +1,86 @@
 /*---------------DESKTOP STYLES---------------*/
 
+/* Resetting margins to 0 */
+figure, body{
+    margin:0;
+}
+
 .banner-image{
     position: relative;
 }
 
-#subhed{
+.headline{
     position: absolute;
-    bottom: 50%;
+    bottom: 20%;
     left: 2.5%;
     font-family: "LeJeunePoster-Regular", Times, serif;
-    font-size: 1em;
     color: white;
+    line-height: 1em;
+}
+
+#subhed{
+    font-size:1em;
 }
 
 #hedline{
-    position: absolute;
-    bottom: 15%;
-    left: 2.5%;
-    font-family: "LeJeunePoster-Regular", Times, serif;
     font-size: 5em;
-    color: white;
+}
+
+/* LINK STYLING – VERY IMPORTANT! */
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: red;
+}
+
+a:active{
+    background-color: aquamarine;
+}
+
+a:visited{
+    color: blue;
 }
 
 .byline{
     margin: 0% 20% 0% 20%;
     font-family: "LeJeunePoster-Regular", Times, serif;
-    color: coral;
 }
 
 .article{
     margin: 0% 20% 0% 20%;
-    font-family: "GrotzecCond-Demibold", Helvetica, sans-serif;
+    font-family: "LeJeunePoster-Regular", Georgia, serif;
     font-size: 1.25em;
-    color: coral;
+    line-height: 1.25em;
+    letter-spacing: 0.5px;
 }
 
-.dropcap{
+figcaption{
+    font-family: "LeJeunePoster-Regular", Georgia, serif;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.5px;
+}
+
+#blockquote{
+    font-family: "LeJeunePoster-Regular", Georgia, serif;
+    color:steelblue;
+    font-size: 40px;
+    align-items: center;
+    line-height: 1.25em;
+}
+
+span.dropcap{
+    font-family: "LeJeunePoster-Regular", Georgia, serif;
     float: left;
     width: 0.7em;
     font-size: 400%;
-    font-family: "LeJeunePoster-Regular"; Times, serif;
-    line-height: 80%;
+    line-height: 110%;
+    height: 56px;
+    padding: 0% 1% 1% 0%;
+    margin: 0% 1% 1% 0%;
 }
 
 /*---------------MOBILE STYLES---------------*/

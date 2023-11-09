@@ -1,19 +1,18 @@
 <!--
-~~~ 231107 ~~~
+~~~ 231109 ~~~
 ~ DESKTOP WEBSITE ~
-• arrange subhed and hed as seperate objects
-• combine subhed and hed into one object
 • add map
-X add blockquote
 • final article styling
+• implement responsive design
 
 ~ RESPONSIVE DESIGN ~
 - how? find out in Thursday class
 - barely works on md-size screens
 - breaks on sm-size screens
 
-~ COMPONENT LIBRARIES ~
-• will adding bootstrap mess things up again?
+~ NOTES TO SELF ~
+– Text color is set to "coral" to ensure that stylesheets are linking properly to `index.html`
+– `danstyle.css` loads fonts in from the server
 -->
 
 
@@ -41,7 +40,7 @@ X add blockquote
                         alt="An arial view of the Colburn Pond Dam, showing the erosion caused by floodwaters."
                         style="width:100%">
                     <figcaption>An arial view of the damaged Colburn Pond Dam after the floodwaters subsided.</figcaption>
-                    <div class="hedline">
+                    <div class="headline">
                         <div id="subhed">
                             <h2>Do we give a damn about our dams?</h2>
                         </div>
@@ -59,7 +58,6 @@ X add blockquote
             </div>
 
             <div class="article">
-                <!--Text color is set to "coral" to ensure that stylesheet is linking properly to `index.html`-->
                 <p><span class="dropcap">T</span>he rain started around 7 p.m. It came down harder and faster than most Leominster residents had ever seen. Soon, motorists started pulling over because they could not see the road. Then the flooding began. In downtown, a building crumbled. Businesses reported chest-deep waters. Along Lancaster Street, sinkholes opened up, swallowing cars, garages, and front yards. Elsewhere, roads and railway tracks were washed away. By the time the rain let up around midnight, eleven inches had inundated Leominster, leaving tens of millions of dollars in damages and compromised infrastructure, including the Colburn Pond Dam in Barrett Park on the western fringes of town.</p>
                 
                 <p>One of 24 dams in Leominster, the Colburn Pond Dam is a 15-foot tall earthen structure built in the 1800s. It creates the nine-acre large Colburn Pond, which feeds into Fall Brook and flows past Lancaster Street. According to Leominster mayor Dean Mazzarella, the dam was slated to undergo repairs and upgrades in the near future, having received a $163,500 <a href="https://www.sentinelandenterprise.com/2021/08/03/leominster-awarded-163500-grant-to-be-used-towards-dam-repair-project-at-barrett-park/" target="_blank">grant</a> from the Massachusetts Executive Office of Energy and Environmental Affairs in 2021.</p>
@@ -73,11 +71,13 @@ X add blockquote
                 <p>Leominster's director of emergency management, Arthur Elbthal, told CBS that two dams out of 24 in the city, including Colburn Pond Dam, sustained damage but held. Now that the dams have been stabilized, the city will prioritize repairing major road damage and the railway, but full recovery will take some time.</p>
 
                 <!--Maybe get text to wrap around? Think about this-->
-                <blockquote>
-                    <p><h3>"It was just Leominster that drew the short straw on this one."</h3></p>
-                </blockquote>
+                <div id="blockquote">
+                    <blockquote>
+                        <p>"It was just Leominster that drew the short straw on this one."</p>
+                    </blockquote>
+                </div>
 
-                <p>The rainfall was a "200-year event," Matthew Belk, a meteorologist with the National Weather Service (NWS) in Boston, told CBS, noting that a trained weather spotter near Leominster recorded 9.5 inches of rain.</p>
+                <span class="dropcap">T</span>he rainfall was a "200-year event," Matthew Belk, a meteorologist with the National Weather Service (NWS) in Boston, told CBS, noting that a trained weather spotter near Leominster recorded 9.5 inches of rain.</p>
 
                 <p>Rob Megnia, a meteorologist at the NWS Forecast Office in Norton, Mass., noted that the timing of the storm that inundated Leominster was unusual given the time of the year. However, thunderstorms are common to southern New England in the summer months when hot, humid air and weak high-altitude winds favor long-duration locally-intense storms.</p>
 
