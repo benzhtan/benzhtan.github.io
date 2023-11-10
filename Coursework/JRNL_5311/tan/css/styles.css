@@ -1,8 +1,9 @@
 /*---------------DESKTOP STYLES---------------*/
 
 /* Resetting margins to 0 */
-figure, body{
+body, figure, blockquote{
     margin:0;
+    padding: 0;
 }
 
 .banner-image{
