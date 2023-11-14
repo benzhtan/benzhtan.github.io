@@ -1,7 +1,7 @@
-// using d3 for convenience
+// DOM - document object model
 var main = document.querySelector("main");
 var scrolly = main.querySelector("#scrolly");
-var sticky = scrolly.querySelector(".sticky-chart");
+var sticky = scrolly.querySelector(".sticky-thing");
 var article = scrolly.querySelector("article");
 var steps = article.querySelectorAll(".step");
 
@@ -10,36 +10,36 @@ var scroller = scrollama();
 
 // scrollama event handlers
 function handleStepEnter(response) {
-  // response = { element, direction, index }
-  var el = response.element;
-  console.log(el);
+// response = { element, direction, index }
+var el = response.element;
+console.log(el);
 
-  // remove is-active from all steps
-  // then add is-active to this step
-  steps.forEach(step => step.classList.remove('is-active'));
-  el.classList.add('is-active');
+// remove is-active from all steps
+// then add is-active to this step
+steps.forEach(step => step.classList.remove('is-active'));
+el.classList.add('is-active');
 
-  // v Update network maps here
-  // update graphic based on step
-  // use "template literals" with backticks
-  sticky.querySelector("p").innerText = el.dataset.step;
-  sticky.style.backgroundColor = el.dataset.color;
-  // ^ `.step` refers to the `data-step` in the div tags //
-
+// update graphic based on step
+// use "template literals" with backticks
+sticky.querySelector("p").innerText = `Step number ${el.dataset.step}`;
+sticky.style.backgroundColor = el.dataset.color;
+sticky.querySelector("p").style.fontSize = `${el.dataset.step}rem`;
 }
 
 function init() {
-  scroller
+// 2. setup the scroller passing options
+// 		this will also initialize trigger observations
+// 3. bind scrollama event handlers (this can be chained like below)
+scroller
     .setup({
-      step: "#scrolly article .step",
-      offset: 0.66,
-      debug: false
+    step: "#scrolly article .step",
+    offset: 0.33,
+    debug: true
     })
     .onStepEnter(handleStepEnter);
 
-  // setup resize event
-  window.addEventListener("resize", scroller.resize);
+// setup resize event
+window.addEventListener("resize", scroller.resize);
 }
 
-// kick things off
 init();

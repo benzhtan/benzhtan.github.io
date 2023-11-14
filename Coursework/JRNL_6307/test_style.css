@@ -1,3 +1,13 @@
+/* body styling */
+body, figure, blockquote{
+    margin:0;
+    padding: 0;
+}
+
+main {
+    margin: 0 20% 0 20%;
+}
+
       /* Controls entire scrolly section */
       #scrolly {
         position: relative;
@@ -61,4 +71,9 @@
         text-align: center;
         padding: 1rem;
         font-size: 1.5rem;
+      }
+
+      iframe {
+        width: 860px;
+        height: 560px;
       }
