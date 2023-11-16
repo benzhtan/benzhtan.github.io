@@ -3,12 +3,7 @@
 ~ DESKTOP WEBSITE ~
 • make map break grid
 • final article styling
-• ask Dan about hed and dek left side alignment
 • ask Dan about embedding svg
-
-~ HAMBURGER MENU ~
-X change style to white bars
-• get rid of background color when menu is collapsed
 
 ~ RESPONSIVE DESIGN ~
 - how? find out in Thursday class
@@ -16,16 +11,15 @@ X change style to white bars
 - breaks on sm-size screens
 
 ~ NOTES TO SELF ~
-– `danstyle.css` loads fonts in from the server
 • Consolidate all stylesheets into one?
-X ai2html is not working. Email Prof. Bhargava for help debugging
+– ai2html is not working. Emailed Prof. Bhargava for help with debugging
 -->
 
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Do We Give a Damn?</title>
+        <title>Damn Them Dams</title>
         <!--meta data, tagging, tracking, srcs-->
         <meta charset="UTF-8">
         <meta name="description" content="Changing climate threatens to overwhelm existing infrastructure in the Northeast.">
@@ -41,7 +35,7 @@ X ai2html is not working. Email Prof. Bhargava for help debugging
     </head>
 
     <body>
-        <!---------------------------- Hamburger menu –––––––––––––––––––––––––––––––––––– -->
+        <!---------------------------- Hamburger menu ---------------------------->
         
         <main>
             <div class="top">
@@ -121,8 +115,6 @@ X ai2html is not working. Email Prof. Bhargava for help debugging
 
                 <p>Leominster's director of emergency management, Arthur Elbthal, told CBS that two dams out of 24 in the city, including Colburn Pond Dam, sustained damage but held. Now that the dams have been stabilized, the city will prioritize repairing major road damage and the railway, but full recovery will take some time.</p>
 
-                <p>The rainfall was a "200-year event," Matthew Belk, a meteorologist with the National Weather Service (NWS) in Boston, told CBS, noting that a trained weather spotter near Leominster recorded 9.5 inches of rain.</p>
-
                 <br>
 
                 <div id="blockquote">
@@ -130,13 +122,36 @@ X ai2html is not working. Email Prof. Bhargava for help debugging
                         <p>"It was just Leominster that drew the short straw on this one."</p>
                     </blockquote>
                 </div>
+
+                <!-- <div class="photo_grid">
+                    <figure>
+                        <img src="images/leo_stat_map.png">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/leo_stat_map.png">
+                        <figcaption></figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="images/leo_stat_map.png">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/leo_stat_map.png">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+ -->
+                <p>The rainfall was a "200-year event," Matthew Belk, a meteorologist with the National Weather Service (NWS) in Boston, told CBS, noting that a trained weather spotter near Leominster recorded 9.5 inches of rain.</p>
                 
                 <!--Figure this bit out. Might have to import as png and give less prominence-->
                 <figure class="graphic" id="rainfall_chart">
                     <iframe src="images/fitchberg-rainfall-FINAL-V2.1.svg"
                             title="Fitchberg rainfall"
-                            width="1000"
-                            height="2000"
+                            width="100%"
                             alt="A chart that shows daily rainfall in Fitchberg from 2003 to 2023."
                             frameborder="no">
                     </iframe>

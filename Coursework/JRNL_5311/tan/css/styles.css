@@ -9,6 +9,10 @@ body, figure, blockquote{
     padding: 0;
 }
 
+img, #rainfall_chart {
+    width: 100%;
+}
+
 /* .banner-image{
     position: relative;
 }
@@ -49,7 +53,7 @@ body, figure, blockquote{
 
 /* LINK STYLING – VERY IMPORTANT! */
 a:link{
-    color: steelblue;
+    color: #006bb2;
     text-decoration: none;
 }
 
@@ -57,12 +61,12 @@ a:hover{
     background-color: orange;
 }
 
-/* a:active{
+a:active{
     background-color: aquamarine;
-} */
+}
 
 a:visited{
-    color: steelblue;
+    color: #006bb2;
 }
 
 .byline{
@@ -86,6 +90,15 @@ figcaption{
 #leo_stat_map{
     float: right;
     margin: 0% 0% 0% 5%;
+    width: 50%;
+}
+
+.photo_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 #rainfall_chart{
@@ -95,9 +108,11 @@ figcaption{
 
 #blockquote{
     font-family: "LeJeunePoster-Regular", Georgia, serif;
-    color:steelblue;
+    color:#006bb2;
     font-size: 40px;
-    align-items: center;
+    width: 75%;
+    margin: 0 12.5% 0 12.5%;
+    align-content: center;
     line-height: 1.25em;
 }
 
