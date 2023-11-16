@@ -1,14 +1,18 @@
 /*---------------DESKTOP STYLES---------------*/
 
+/* This line adds borders for debugging purposes */
+/* * { border-style:solid; } */
+
 /* Resetting margins to 0 */
 body, figure, blockquote{
     margin:0;
     padding: 0;
 }
 
-.banner-image{
+/* .banner-image{
     position: relative;
 }
+ */
 
 .hamburger_menu{
     position: absolute;
@@ -16,10 +20,20 @@ body, figure, blockquote{
     left: 2.5%;
 }
 
-.headline{
+.top{
+    background-image: url(../images/Dam-aerial-NULL-PERM.jpeg);
+    height: 800px;
+    background-color: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.top .headline{
     position: absolute;
     bottom: 20%;
-    left: 2.5%;
+    text-align: left;
+    margin-left: 2.5%;
     font-family: "LeJeunePoster-Regular", Times, serif;
     color: white;
     line-height: 1em;
