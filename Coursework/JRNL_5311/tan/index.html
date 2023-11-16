@@ -1,9 +1,14 @@
 <!--
-~~~ 231109 ~~~
+~~~ 231116 ~~~
 ~ DESKTOP WEBSITE ~
 • make map break grid
 • final article styling
-• implement responsive design
+• ask Dan about hed and dek left side alignment
+• ask Dan about embedding svg
+
+~ HAMBURGER MENU ~
+X change style to white bars
+• get rid of background color when menu is collapsed
 
 ~ RESPONSIVE DESIGN ~
 - how? find out in Thursday class
@@ -11,8 +16,9 @@
 - breaks on sm-size screens
 
 ~ NOTES TO SELF ~
-– Text color is set to "coral" to ensure that stylesheets are linking properly to `index.html`
 – `danstyle.css` loads fonts in from the server
+• Consolidate all stylesheets into one?
+X ai2html is not working. Email Prof. Bhargava for help debugging
 -->
 
 
@@ -28,6 +34,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <html lang="en"></html>
         <!--Appending stylesheets-->
+        <link rel="stylesheet" type="text/css" href="https://journalismdesign.camd.northeastern.edu/the-end/css/theend.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/danstyle.css">
     </head>
@@ -40,6 +48,44 @@
                         alt="An arial view of the Colburn Pond Dam, showing the erosion caused by floodwaters."
                         style="width:100%">
                     <figcaption>An arial view of the damaged Colburn Pond Dam after the floodwaters subsided.</figcaption>
+
+                    <!-- Insert hamburger menu here-->
+                    <div class="hamburger_menu">
+                        <nav role="navigation" class="essential-nav">
+                            <div id="menuToggle">
+                                <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+                                <input type="checkbox"/>
+                                <!-- Some spans to act as a hamburger. -->
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="menu">
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/anderson/index.html"><li>Quillan Anderson</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/booth/index.html"><li>Laurel Booth</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/chan/index.html"><li>Kelly Chan</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/dhindsa/index.html"><li>Dylan Dhindsa</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/egan/index.html"><li>Gwen Egan</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/egelberg/index.html"><li>Jacob Egelberg</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/fan/index.html"><li>Flora Fan</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/gilson/index.html"><li>Grace Gilson</li></a> <a href="https://journalismdesign.camd.northeastern.edu/the-end/khatib/index.html"><li>Jayden Khatib</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/poejo/index.html"><li>Vitoria Poejo</li></a> <a href="https://journalismdesign.camd.northeastern.edu/the-end/seligman/index.html"><li>Derek Seligman</li> <a href="https://journalismdesign.camd.northeastern.edu/the-end/rajesh/index.html"><li>Pavithra Rajesh</li></a>
+                                    </a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/tan/index.html"><li>Ben Tan</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/vignola/index.html"><li>Minerva Vignola-Hung</li></a>
+                                    <a href="https://journalismdesign.camd.northeastern.edu/the-end/yan/index.html"><li>Matt Yan</li></a>
+                                </ul>
+                            </div>
+                        </nav>
+                        
+                        <!-- Make logo clickable by wrapping a div in a link -->
+                        <a href="https://journalismdesign.camd.northeastern.edu/the-end/index.html">
+                            <div style="width: 50%; height: 50px; margin: 0 25%; position: absolute; top:0;z-index:5;">
+                            </div>
+                        </a>
+                    </div>
+            
+                    <!-- End hamburger menu -->
+
                     <div class="headline">
                         <div id="subhed">
                             <h2>Do we give a damn about our dams?</h2>
@@ -75,6 +121,8 @@
 
                 <p>Leominster's director of emergency management, Arthur Elbthal, told CBS that two dams out of 24 in the city, including Colburn Pond Dam, sustained damage but held. Now that the dams have been stabilized, the city will prioritize repairing major road damage and the railway, but full recovery will take some time.</p>
 
+                <p>The rainfall was a "200-year event," Matthew Belk, a meteorologist with the National Weather Service (NWS) in Boston, told CBS, noting that a trained weather spotter near Leominster recorded 9.5 inches of rain.</p>
+
                 <br>
 
                 <div id="blockquote">
@@ -85,7 +133,7 @@
                 
                 <!--Figure this bit out. Might have to import as png and give less prominence-->
                 <figure class="graphic" id="rainfall_chart">
-                    <iframe src="images/fitchberg-rainfall-FINAL.svg"
+                    <iframe src="images/fitchberg-rainfall-FINAL-V2.1.svg"
                             title="Fitchberg rainfall"
                             width="1000"
                             height="2000"
@@ -94,9 +142,7 @@
                     </iframe>
                 </figure>
                 
-                <p><span class="dropcap">T</span>he rainfall was a "200-year event," Matthew Belk, a meteorologist with the National Weather Service (NWS) in Boston, told CBS, noting that a trained weather spotter near Leominster recorded 9.5 inches of rain.</p>
-
-                <p>Rob Megnia, a meteorologist at the NWS Forecast Office in Norton, Mass., noted that the timing of the storm that inundated Leominster was unusual given the time of the year. However, thunderstorms are common to southern New England in the summer months when hot, humid air and weak high-altitude winds favor long-duration locally-intense storms.</p>
+                <p><span class="dropcap">R</span>ob Megnia, a meteorologist at the NWS Forecast Office in Norton, Mass., noted that the timing of the storm that inundated Leominster was unusual given the time of the year. However, thunderstorms are common to southern New England in the summer months when hot, humid air and weak high-altitude winds favor long-duration locally-intense storms.</p>
 
                 <p>"The storm could have easily set up over Boston or any other of the surrounding areas," Megnia said. "It was just Leominster that drew the short straw on this one."</p>
 
@@ -109,8 +155,12 @@
         <scripts>
             <!--JS scripts that enable interactivity-->
         </scripts>
+
+        <footer>
+            <!-- ------------------------ FOOTER ----------------------------------- -->
+            <p style="text-align: center; padding:30px 0; margin-top: 50px; font-family:'Helvetica';border-top:1px solid black">Produced by students at the <a href="https://camd.northeastern.edu/journalism-at-northeastern/" style="text-decoration: underline" >Northeastern University School of Journalism.</a> &#169; 2023</p>
+
+            <h5 style="border-top: none; margin-top: -2%; text-align: center"><img src="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/images/seal_logotype-768x252.png" style="width:300px"></h5>
+        </footer>
     </body>
-    <footer>
-        <!--Bottom of the page stuff go here.-->
-    </footer>
 </html>
