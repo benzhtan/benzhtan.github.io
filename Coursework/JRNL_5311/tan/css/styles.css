@@ -88,8 +88,11 @@ figcaption{
 }
 
 #leo_stat_map{
+    position: relative;
+    left: 20%;
     float: right;
-    margin: 0% 0% 0% 5%;
+    margin-left: -15%;
+    /* margin: 0% 0% 0% 5%; */
     width: 50%;
 }
 
