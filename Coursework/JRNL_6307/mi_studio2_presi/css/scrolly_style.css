@@ -1,0 +1,67 @@
+#scrolly {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 1rem;
+}
+
+#scrolly > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+article {
+    position: relative;
+    padding: 0 1rem;
+    max-width: 20rem;
+}
+
+.sticky-thing {
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+    width: 860px;
+    height: 560px;
+    background-color: #8a8a8a;
+    /* KEEP THE NEXT TWO LINES! */
+    z-index: 0;
+    top: 12.5vh;
+    /* Center everything inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://benzhtan.github.io/Coursework/JRNL_6307/tan/assets/network%20maps/2010_network_v2.1.svg");
+    background-position: center;
+}
+
+.sticky-thing p {
+    padding: 1rem;
+    font-size: 8rem;
+    font-weight: 900;
+    color: #000;
+}
+
+.step {
+    margin: 0 auto 2rem auto;
+    background-color: #3b3b3b;
+    color: #fff;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step.is-active {
+    margin: 0 auto 2rem auto;
+    background-color: goldenrod;
+    color: #3b3b3b;
+}
+
+.step p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
