@@ -1,0 +1,19 @@
+/* This line adds borders for debugging purposes */
+/* * { border-style:solid; } */
+
+.hed {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #096AB2;
+}
+
+.dek {
+    text-align: center;
+    font-size: 1rem;
+    color: #096AB2;
+}
+
+span.rain_vol {
+    color: #F36E21;
+}

@@ -9,7 +9,14 @@ body, figure, blockquote{
     padding: 0;
 }
 
-img, #rainfall_chart {
+/* Implementing responsive design. Breakpoint set to "max-width: 769px" */
+@media screen and (max-width: 769px) {
+    main {
+        margin: 0 5% 0 5%;
+    }
+}
+
+img {
     width: 100%;
 }
 
