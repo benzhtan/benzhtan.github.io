@@ -7,6 +7,40 @@ html body figure blockquote{
     padding: 0;
 }
 
+/* LINK STYLING – VERY IMPORTANT! */
+a:link{
+    color: #006bb2;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: orange;
+}
+
+a:active{
+    background-color: aquamarine;
+}
+
+a:visited{
+    color: #006bb2;
+}
+
+.byline{
+    font-family: "Georgia", serif;
+}
+
+.article{
+    font-family: "Georgia", serif;
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+
+figcaption{
+    font-family: "Georgia", serif;
+    font-size: 1em;
+    line-height: 1em;
+}
+
 /*---------------------------------------------------DESKTOP STYLES---------------------------------------------------*/
 
 
@@ -57,40 +91,6 @@ html body figure blockquote{
 
     #hedline{
         font-size: 5em;
-    }
-
-    /* LINK STYLING – VERY IMPORTANT! */
-    a:link{
-        color: #006bb2;
-        text-decoration: none;
-    }
-
-    a:hover{
-        background-color: orange;
-    }
-
-    a:active{
-        background-color: aquamarine;
-    }
-
-    a:visited{
-        color: #006bb2;
-    }
-
-    .byline{
-        font-family: "Georgia", serif;
-    }
-
-    .article{
-        font-family: "Georgia", serif;
-        font-size: 1.25em;
-        line-height: 1.25em;
-    }
-
-    figcaption{
-        font-family: "Georgia", serif;
-        font-size: 1em;
-        line-height: 1em;
     }
 
     #leo_stat_map{
@@ -176,36 +176,16 @@ html body figure blockquote{
     }
 
     #hedline{
-        font-size: 5em;
-    }
-
-    /* LINK STYLING – VERY IMPORTANT! */
-    a:link{
-        color: #006bb2;
-        text-decoration: none;
-    }
-
-    a:hover{
-        background-color: orange;
-    }
-
-    a:active{
-        background-color: aquamarine;
-    }
-
-    a:visited{
-        color: #006bb2;
+        font-size: 4em;
     }
 
     .byline{
-        /* margin: 0% 20% 0% 20%; */
         font-family: "Georgia", serif;
     }
 
     .article{
-        /* margin: 0% 20% 0% 20%; */
         font-family: "Georgia", serif;
-        font-size: 1.25em;
+        font-size: 1em;
         line-height: 1.25em;
     }
 
@@ -216,29 +196,16 @@ html body figure blockquote{
     }
 
     #leo_stat_map{
-        position: relative;
-        left: 20%;
-        float: right;
-        margin-left: -15%;
-        /* margin: 0% 0% 0% 5%; */
-        width: 50%;
-    }
-
-    .photo_grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        margin-left: -10%;
+        width: 120%;
     }
 
     #blockquote{
         font-family: "LeJeunePoster-Regular", Georgia, serif;
         color:#006bb2;
-        font-size: 40px;
-        width: 75%;
-        margin: 0 12.5% 0 12.5%;
-        align-content: center;
+        font-size: 24px;
+        border: 0;
+        margin: 0;
         line-height: 1.25em;
     }
 
@@ -254,3 +221,12 @@ html body figure blockquote{
     }
 }
 
+@media screen and (max-width: 400px) {
+    #hedline{
+        font-size: 3em;
+    }
+
+    #subhed{
+        font: size 0.865em;
+    }
+}
