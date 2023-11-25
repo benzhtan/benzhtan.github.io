@@ -46,7 +46,7 @@ figcaption{
 
 
 /* Implementing responsive design. Breakpoint set to "max-width: 769px" */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 800px) {
     main {
         margin: 0 20% 0 20%;
     }
@@ -113,7 +113,8 @@ figcaption{
         font-family: "LeJeunePoster-Regular", Georgia, serif;
         color:#006bb2;
         font-size: 40px;
-        width: 75%;
+        width: 100%;
+        margin-left: 0;
         margin: 0 12.5% 0 12.5%;
         align-content: center;
         line-height: 1.25em;
@@ -132,7 +133,7 @@ figcaption{
 }
 /*---------------MOBILE STYLES---------------*/
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 800px) {
     main {
         margin: 0 5% 0 5%;
     }
