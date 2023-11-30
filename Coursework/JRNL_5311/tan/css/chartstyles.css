@@ -18,14 +18,14 @@
 /*---------------------DESKTOP---------------------*/
 @media screen and (min-width: 769px) {
     #blockquote {
-        width: 120%;
-        margin-left: -10%;
+        width: 100%;
+        /* margin-left: -10%; */
     }
     
     .hed {
         text-align: center;
-        width: 120%;
-        margin-left: -10%;
+        width: 100%;
+        /* margin-left: -10%; */
         font-size: 4rem;
         line-height: 4rem;
         color: #096AB2;
