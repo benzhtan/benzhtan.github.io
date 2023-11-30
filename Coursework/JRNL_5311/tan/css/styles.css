@@ -45,7 +45,7 @@ figcaption{
 
 
 
-/* Implementing responsive design. Breakpoint set to "max-width: 769px" */
+/* Implementing responsive design. Breakpoint set to "min-width: 800px" */
 @media screen and (min-width: 800px) {
     main {
         margin: 0 20% 0 20%;
@@ -54,11 +54,6 @@ figcaption{
     img {
         width: 100%;
     }
-
-    /* .banner-image{
-        position: relative;
-    }
-    */
 
     .hamburger_menu{
         position: absolute;
@@ -81,7 +76,7 @@ figcaption{
         text-align: left;
         margin-left: 2.5%;
         font-family: "LeJeunePoster-Regular", Times, serif;
-        color: white;
+        color: #ededed;
         line-height: 1em;
     }
 
@@ -168,7 +163,7 @@ figcaption{
         text-align: left;
         margin-left: 2.5%;
         font-family: "LeJeunePoster-Regular", Times, serif;
-        color: white;
+        color: #ededed;
         line-height: 1em;
     }
 
@@ -229,5 +224,6 @@ figcaption{
 
     #subhed{
         font: size 0.865em;
+        line-height: 1.5em;
     }
 }
