@@ -1,9 +1,14 @@
+html {
+    margin:0;
+    padding: 0; 
+}
+
 #scrolly {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     padding: 1rem;
 }
 
@@ -16,7 +21,7 @@
 .step {
     position: relative;
     padding: 0 1rem;
-    max-width: 20rem;
+    max-width: 30rem;
 }
 
 .sticky-thing {
@@ -25,7 +30,7 @@
     margin: 0;
     width: 860px;
     height: 560px;
-    background-color: #8a8a8a;
+    /* background-color: #8a8a8a; */
     /* KEEP THE NEXT TWO LINES! */
     z-index: 0;
     top: 12.5vh;
@@ -46,8 +51,8 @@
 
 .step {
     margin: 0 auto 2rem auto;
-    background-color: #3b3b3b;
-    color: #fff;
+    /* background-color: #3b3b3b;
+    color: #fff; */
 }
 
 .step:last-child {
@@ -56,8 +61,8 @@
 
 .step.is-active {
     margin: 0 auto 2rem auto;
-    background-color: goldenrod;
-    color: #3b3b3b;
+    /* background-color: goldenrod;
+    color: #3b3b3b; */
 }
 
 .step p {
