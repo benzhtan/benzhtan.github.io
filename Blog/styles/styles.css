@@ -1,0 +1,49 @@
+
+/* REMOVE BULLETS FROM UL */
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+/* TEST */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/*------------ HYPERLINKS ------------*/
+a:link {
+    color: blue; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+/*------------ DESKTOP and TABLETS ------------*/
+body {
+    margin: 0% 15% 0% 15%;
+}
+
+#summary {
+    margin: 0% 10% 0% 10%;
+    text-align: justify;
+}
