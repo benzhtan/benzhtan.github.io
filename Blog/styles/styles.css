@@ -37,10 +37,13 @@ a:link {
     text-decoration: underline;
   }
 
+footer {
+    text-align: center;
+}
 
 /*------------ DESKTOP and TABLETS ------------*/
 body {
-    margin: 0% 15% 0% 15%;
+    margin: 0% 20% 0% 20%;
 }
 
 #summary {
