@@ -29,13 +29,13 @@ h2 {
 
 /*------------ HYPERLINKS ------------*/
 a:link {
-    color: blue; 
+    color: green; 
     background-color: transparent; 
     text-decoration: none;
   }
   
   a:visited {
-    color: green;
+    color: limegreen;
     background-color: transparent;
     text-decoration: none;
   }
@@ -59,7 +59,7 @@ footer {
 /*------------ DESKTOP and TABLETS ------------*/
 /*------------ DEBUGGING ------------*/
 
-.col{
+/* .col{
   display: flex;
   border: solid lightblue;
 }
@@ -72,4 +72,4 @@ footer {
 .subhed{
   display: flex;
   border: solid coral;
-}
+} */
