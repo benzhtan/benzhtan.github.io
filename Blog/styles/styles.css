@@ -1,15 +1,30 @@
-
-/* REMOVE BULLETS FROM UL */
-ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-  }
+/* THIS STYLE SHEET SUPERSEDES BOOTSTRAP */
 
 /* TEST */
 h1 {
     color: red;
     text-align: center;
+}
+
+h2 {
+  /* font-size: ; */
+  color: pink;
+}
+
+/*------------ TEXT ALIGNMENT ------------*/
+#grad{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#bio {
+  display: flex;
+  align-items: flex-end;
+}
+
+.summary {
+  color: blue; /* test stylesheet linking */
+  text-overflow: ellipsis;
 }
 
 /*------------ HYPERLINKS ------------*/
@@ -42,11 +57,19 @@ footer {
 }
 
 /*------------ DESKTOP and TABLETS ------------*/
-body {
-    margin: 0% 20% 0% 20%;
+/*------------ DEBUGGING ------------*/
+
+.col{
+  display: flex;
+  border: solid lightblue;
 }
 
-#summary {
-    margin: 0% 10% 0% 10%;
-    text-align: justify;
+.row{
+  display: flex;
+  border: solid lightpink;
+}
+
+.subhed{
+  display: flex;
+  border: solid coral;
 }
