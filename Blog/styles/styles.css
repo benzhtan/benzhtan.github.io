@@ -73,3 +73,30 @@ footer {
   display: flex;
   border: solid coral;
 } */
+
+.breakpoint-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.breakpoint-label {
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.z-index-1000 {
+  z-index: 1000;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}

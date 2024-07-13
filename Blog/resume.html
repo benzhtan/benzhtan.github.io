@@ -16,7 +16,7 @@
         <meta charset=”utf-8”/>
         <meta name="author" content="Benjamin Tan">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Benjamin ZH Tan</title>
+        <title>Benjamin's resume</title>
 
         <!-- STYLE SHEETS -->
         
@@ -27,21 +27,23 @@
         <!-- Others -->
         <link rel="stylesheet" href="styles/styles.css">
     </head>
+    
+    <div>
+        <div id="breakpoint-indicator" class="position-fixed bottom-0 end-0 bg-dark text-white p-2 m-2 rounded z-index-1000"></div>
+        <div id="breakpoint-bars" class="position-fixed top-0 start-0 w-100 h-100 pointer-events-none z-index-1000"></div>
+        <script src="/Users/benjamin/benzhtan.github.io/Blog/breakpoints.js"></script>
+    </div>
 
     <body>
-        <div class="container mt-5">
+        <div class="container mt-5" id="logo">
             <!-- NEED TO CHANGE TO LIVE LINK -->
             <div class="row">
                 <a href="file:///Users/benjamin/benzhtan.github.io/Blog/main.html"><h1>Zi-Hao Benjamin Tan</h1></a>
             </div>
         </div>
 
-        <div class="container py-5" id="bio">
-            <div class="row">
-                <div class="col" id="greeting">
-                    <h1>Hi, I'm Ben! &#x1F44B</h1>                      <!--"&#x1F44B" is html entity for hand waving emoji-->
-                </div>
-                
+        <div class="container py-5" id="professional-summary">
+            <div class="row">                
                 <!-- KEEP PROFESSIONAL SUMMARY IN RESUME.HTML. REMOVE FROM MAIN.HTML -->
                 <div class="col" id="summary">
                     I am a digital content creator with 5+ years of experience, specializing in content development, visual storytelling, copy editing, proofreading, policy writing, and technical documentation. I build custom data collection pipelines in pursuit of discovering novel insights, and excel at crafting nuanced narratives based on expert feedback and data analysis to persuade target audiences.
@@ -49,7 +51,7 @@
             </div>
         </div>
 
-        <div class="container py-5" id="big-nav-buttons">                          <!-- Big navigation buttons will go here -->
+        <div class="container py-5" id="big-nav-buttons">
 
             <!-- From perplexity.ai -->
             <div class="container mt-5">
@@ -76,52 +78,168 @@
             </div>
         </div>
 
-        <div class="container" id="education">
+        <div class="container mb-5" id="education">
             <div class="row subhed">
                 <h2>Education</h2>
             </div>
 
             <div class="row" id="NEU">
                 <div class="col">
-                    M.S. Media Innovation and Data Communication
+                    <b>M.S. Media Innovation and Data Communication</b>
                     <br>
                     Northeastern University
                 </div>
 
                 <div class="col text-end" id="grad">
-                    Graduated Dec. 2023
+                    <b>Graduated Dec. 2023</b>
                     <br>
                     Boston, MA
                 </div>
             </div>
             <div class="row" id="UMass">
                 <div class="col">
-                    B.A. Journalism
+                    <b>B.A. Journalism</b>
                     <br>
                     University of Massachusetts, Amherst
                 </div>
 
                 <div class="col text-end" id="grad">
-                    Graduated May 2021
+                    <b>Graduated May 2021</b>
                     <br>
                     Amherst, MA
                 </div>
             </div>
         </div>
 
-        <div class="container" id="skills">
-            <div class="container">
-                <div class="row subhed">
-                    <h2>Skills</h2>
+        <hr>
+
+        <div class="container my-5" id="skills">
+            <div class="row subhed">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    Production:
+                </div>
+                
+                <div class="col">
+                    Science writing, technical writing and documentation, copyediting and proofreading, photography, AP Style
+                </div>                 
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    Code:
+                </div>
+
+                <div class="col">
+                    R, HTML, CSS, Markdown, Python, JavaScript, D3.js
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    Software:
+                </div>
+
+                <div class="col">
+                    Photoshop, InDesign, Illustrator, Premier Pro, Microsoft Office, Visual Studio Code, Google Workspace, Google Analytics, Audacity, Flourish, Tableau, QGIS
                 </div>
             </div>
         </div>
 
-        <div class="container" id="work_experience">
-            <div class="container">
-                <div class="row subhed">
-                    <h2>Work Experience</h2>
+        <hr>
+
+        <div class="container my-5" id="work_experience">
+            <div class="row subhed">
+                <h2>Work Experience</h2>
+            </div>
+
+            <!-- <div class="container" id="RTE-2024">
+                <div class="row">
+                    <div class="col">
+                        <b>Assistant to the Executive Director, and Assistant Science Editor</b>
+                        <br>
+                        Remineralize the Earth
+                    </div>
+
+                    <div class="col text-end" id="exployment-date">
+                        <b>Apr 2024 &ndash; Present</b>
+                        <br>
+                        Northampton, MA (Remote)
+                    </div>
                 </div>
+                
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        Assigned stories to a team of 3-4 writers and oversaw writing and publication of online agrogeology blog, resulting in audience growth to 29,000+ unique website visitors and 3,300+ subscribers of our fortnightly newsletter.
+                    </li>
+                    <li class="list-group-item">
+                        Assisted the Executive Director in coordinating a team of developers and designers to define scope of our new website.
+                    </li>
+                    <li class="list-group-item">
+                        Took the initiative to create and maintain project documentation, plans, and progress reports.
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="container" id="RTE-2024">
+                <div class="row">
+                    <div class="col">
+                        <b>Assistant to the Executive Director, and Assistant Science Editor</b>
+                        <br>
+                        Remineralize the Earth
+                    </div>
+
+                    <div class="col text-end" id="exployment-date">
+                        <b>Apr 2024 &ndash; Present</b>
+                        <br>
+                        Northampton, MA (Remote)
+                    </div>
+                </div>
+
+                <div class="row">
+                    Assigned stories to a team of 3-4 writers and oversaw writing and publication of online agrogeology blog, resulting in audience growth to 29,000+ unique website visitors and 3,300+ subscribers of our fortnightly newsletter.
+                </div>
+
+                <div class="row">
+                    Assisted the Executive Director in coordinating a team of developers and designers to define scope of our new website.
+                </div>
+
+                <div class="row">
+                    Took the initiative to create and maintain project documentation, plans, and progress reports.
+                </div>
+            </div>
+
+
+            <div class="container" id="NEU-RA-2023">
+                <div class="row">
+                    <div class="col">
+                        <b>Research Assistant</b>
+                        <br>
+                        Northeastern University, School of Journalism
+                    </div>
+
+                    <div class="col text-end" id="exployment-date">
+                        <b>Feb 2023 &ndash; Jul 2023</b>
+                        <br>
+                        Boston, MA
+                    </div>
+                </div>
+
+                <div class="row">
+                    Conducted literature reviews on multimodal integration and the role of LAM institutions in democratic societies.
+                </div>
+
+                <div class="row">
+                    Tracked ongoing advancements in human-computer interactions (HCI) using open-source investigative methods.
+                </div>
+            </div>
+
+            <div class="row">
+                3
             </div>
         </div>
 
