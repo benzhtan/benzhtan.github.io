@@ -20,4 +20,7 @@
 
 ###Uncategorized Notes
 - "&#x1F44B" is html entity for hand waving emoji
-- 
+- KEYBOARD BINDINGS TO CREATE COMMENT
+    - CMD + / comments out multiple lines
+    - Shift + option + A creates a new comment
+    - WHITE SPACES IN BOOTSTRAP ARE CALLED "GUTTERS"

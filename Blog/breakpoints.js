@@ -19,6 +19,26 @@ function showBreakpoint() {
   
     const indicator = document.getElementById('breakpoint-indicator');
     indicator.textContent = `${currentBreakpoint.toUpperCase()} (${width}px)`;
+  
+    // Update breakpoint bars
+    const barsContainer = document.getElementById('breakpoint-bars');
+    barsContainer.innerHTML = '';
+  
+    for (const [breakpoint, minWidth] of Object.entries(breakpoints)) {
+      if (minWidth > 0) {
+        const bar = document.createElement('div');
+        bar.className = 'breakpoint-bar';
+        bar.style.left = `${minWidth}px`;
+  
+        const label = document.createElement('div');
+        label.className = 'breakpoint-label';
+        label.textContent = breakpoint;
+        label.style.left = `${minWidth}px`;
+  
+        barsContainer.appendChild(bar);
+        barsContainer.appendChild(label);
+      }
+    }
   }
   
   // Show breakpoint on load and resize
