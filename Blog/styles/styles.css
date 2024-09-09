@@ -33,6 +33,12 @@ h2 {
   justify-content: flex-start;
 }
 
+#ben {
+  color:darkgoldenrod;
+  text-align: center;
+  vertical-align: middle;
+}
+
 /*------------ HYPERLINKS ------------*/
 a:link {
     color: green; 
