@@ -68,7 +68,16 @@ footer {
     text-align: center;
 }
 
-/*------------ DESKTOP and TABLETS ------------*/
+p#proj_description {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+ /*------------ DESKTOP and TABLETS ------------*/
 /*------------ DEBUGGING ------------*/
 
 /* .col{
