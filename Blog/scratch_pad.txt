@@ -59,4 +59,26 @@
     </div>
 </div>
 
-</html>
+<a href="" target="_blank"></a>
+
+<p>
+    So far, I have...
+    <ol>
+        <li>Written about <a href="" target="_blank">food</a>, the <a href="" target="_blank">climate</a>, and a <a href="" target="_blank">NFL star turned real estate mogul</a> (and met him too!).</li>
+        <li><a href="" target="_blank">Scraped news outlets and analyzed their coverage of nuclear energy</a>, <a href="" target="_blank">visualized meteorological data</a>, and <a href="" target="_blank">chosen wrong methods</a> to analyze text data.</li>
+        <li>Yapped with nuclear reactor techs, vintners, and luthiers about their craft.</li>
+    </ol>
+
+    These days, I...
+    <ol>
+        <li>Write about carbon markets</li>
+        <li>Train science writers</li>
+        <li>Herd a team of developers and designers</li>
+    </ol>
+    Tl;dr, I like asking questions and finding people to answer them.
+    <br>
+    Have questions? Let's chat!
+</p>
+<p>
+    I write about <a href="https://www.remineralize.org/author/benjamin-zh-tan/">carbon markets</a>, analyze the effect of <a href="https://mediainnovation.camd.northeastern.edu/2023/masters23/tan/" target="_blank">media sentiment on public perception of nuclear energy</a>, visualize how <a href="https://journalismdesign.camd.northeastern.edu/the-end/tan/" target="_blank">one rainstorm almost broke a dam</a>, and choose <a href="https://www.storybench.org/using-r-and-media-cloud-to-do-sentiment-analysis/" target="_blank">wrong methods when analyzing text data</a>.
+</p>
