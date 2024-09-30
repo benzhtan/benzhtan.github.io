@@ -2,71 +2,38 @@
 
 /* TEST */
 h1 {
-  font-size: 5vw;  
+  font-size: 5vh;  
   color: red;
   text-align: center;
 }
 
-h2 {
-  /* font-size: ; */
-  color: pink;
-}
-
-/*------------ TEXT ALIGNMENT ------------*/
-#grad{
-  display: flex;
-  justify-content: flex-end;
-}
-
-#bio {
-  display: flex;
-  align-items: flex-end;
-}
-
-.summary {
-  color: blue; /* test stylesheet linking */
-  text-overflow: ellipsis;
-}
-
-.skills {
-  display: flex;
-  color:aqua;
-  justify-content: flex-start;
-}
-
-#ben {
-  color:darkgoldenrod;
-  text-align: center;
-  vertical-align: middle;
-}
-
 /*------------ HYPERLINKS ------------*/
 a:link {
-    color: green; 
-    background-color: transparent; 
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: limegreen;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 p#proj_description {
@@ -77,21 +44,3 @@ p#proj_description {
 .overflow-ellipsis {
   text-overflow: ellipsis;
 }
-
- /*------------ DESKTOP and TABLETS ------------*/
-/*------------ DEBUGGING ------------*/
-
-/* .col{
-  display: flex;
-  border: solid lightblue;
-}
-
-.row{
-  display: flex;
-  border: solid lightpink;
-}
-
-.subhed{
-  display: flex;
-  border: solid coral;
-} */

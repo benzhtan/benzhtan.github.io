@@ -16,60 +16,40 @@
         <meta charset=”utf-8”/>
         <meta name="author" content="Benjamin Tan">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Benjamin's website</title>
+        <title>About benzhtan</title>
 
         <!-- STYLE SHEETS -->
         
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        
-        <!-- Others -->
-        <link rel="stylesheet" href="styles/styles.css">
+            <!--Internal-->
+            <link rel="stylesheet" href="styles/styles.css">
+
+            <!--Bootstrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                
     </head>
 
     <body>
-        <div class="container mt-5">
-            <!-- NEED TO CHANGE TO LIVE LINK -->
-            <div class="row">
-                <a href="file:///Users/benjamin/benzhtan.github.io/Blog/main.html"><h1>Zi-Hao Benjamin Tan</h1></a>
-            </div>
-        </div>
-
-        <!--Intro blurb-->
+        <!--Logo-->
         <div class="container py-5">
-            <div class="row">
-                <div class="col">
-                    <h1 id="ben">Hi, I'm Ben! &#x1F44B</h1>              <!--"&#x1F44B" is html entity for hand waving emoji-->
-                </div>
-                <div class="col">
-                    <p>
-                        I write about <a href="https://www.remineralize.org/author/benjamin-zh-tan/">carbon markets</a>, analyze the effect of <a href="https://mediainnovation.camd.northeastern.edu/2023/masters23/tan/" target="_blank">media sentiment on public perception of nuclear energy</a>, visualize how <a href="https://journalismdesign.camd.northeastern.edu/the-end/tan/" target="_blank">one rainstorm almost broke a dam</a>, and choose <a href="https://www.storybench.org/using-r-and-media-cloud-to-do-sentiment-analysis/" target="_blank">wrong methods when analyzing text data</a>.
-                    </p>
-                </div>
+            <div class="col">
+                <a href="file:///Users/benjamin/benzhtan.github.io/Blog/main.html">
+                    <h1 id="ben">Hi, I'm Ben! &#x1F44B</h1>  <!--"&#x1F44B" is html entity for hand waving emoji-->
+                </a>
             </div>
         </div>
 
-        <!--Nav buttons-->                                                                          <!--CHANGE TO LIVE LINKS-->
-        <div class="container py-5" id="big-nav-buttons">
-
-            <!-- From perplexity.ai -->
-            <div class="container mt-5">
+        <!--Nav buttons-->
+        <div class="container col-8 py-5" id="nav-buttons">
+            <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col">
                         <a href="https://drive.google.com/file/d/1Hbh3f169H2oXxv3vuo6hzhEce3-n94Gj/view?usp=sharing" role="button" class="btn btn-primary btn-block w-100">
                             Resume
                         </a>
                     </div>
 
-                    <!-- NEED TO DECIDE LINK DESTINATION -->
-                    <div class="col-4"> 
-                        <a href="file:///Users/benjamin/benzhtan.github.io/Blog/works.html" role="button" class="btn btn-primary btn-block w-100">
-                            Work Samples
-                        </a>
-                    </div>
-
-                    <div class="col-4">
+                     <div class="col">
                         <a href="mailto:ben.zh.tan@gmail.com" role="button" class="btn btn-primary btn-block w-100">
                             Contact Me
                         </a>
@@ -77,73 +57,34 @@
                 </div>
             </div>
         </div>
-
-        <!--Projects-->
-        <div class="container gx-0" id="projects">
-            <div class="container">
-                <div class="row, subhed">
-                    <h2>Projects</h2>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row g-3"> <!-- Added g-3 for horizontal spacing -->
-                    <div class="col-4">                   <!-- Journ-Design -->
-                        <div class="border p-3">
-                            <a href="https://journalismdesign.camd.northeastern.edu/the-end/tan/" target="_blank">
-                                <img src="/Users/benjamin/benzhtan.github.io/Blog/images/J5311-insta-thumbnail.JPG" class="img-fluid">
-                                <h3>Damn Them Dams</h3>
-                            </a>
-                            <div class="row, date">
-                                <time datetime="2023-12-08">December 8, 2023</time>
-                            </div>
-                            <p class="overflow-ellipsis" id="proj_description">
-                                A webpage I designed and built for Prof. Dan Zedek&apos;s Design for Storytelling course at Northeastern University School of Journalism. For this project, I visualized rainfall data scrapped from NOAA&apos;s database and interviewed meteorological experts, town officials, and subject matter experts to understand how one rainstorm overwhelmed a town's aging infrastructure.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-4">                      <!-- MI-Studio-2 -->
-                        <div class="border p-3">
-                            <a href="https://mediainnovation.camd.northeastern.edu/2023/masters23/tan/" target="_blank">
-                                <img src="/Users/benjamin/benzhtan.github.io/Blog/images/rubble.jpg" class="img-fluid">
-                                <h3>The Most Misunderstood Source of Electricity</h3>
-                            </a>
-                            <div class="row, date">
-                                <time datetime="2023-12-06">December 6, 2023</time>
-                            </div>
-                            <p class="overflow-ellipsis" id="proj_description">
-                                Masters capstone project completed as part of the Media Innovation Studio 2 course under the direction of Professor Dan Zedek. I developed text mining workflows to scrape text data from news outlets to determine how news media coverage of nuclear energy affects its public perception. My analysis of the resulting corpus revealed a lack of emotional resonance, suggesting a balanced emotional approach to nuclear energy. Academic literature and expert sources suggested that this neutrality was a deliberate editorial choice, making news coverage a unsuitable proxy for measuring public sentiment towards nuclear energy.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-4">                <!-- Long-form Narrative -->
-                        <div class="border p-3">
-                            <a href="https://www.gazettenet.com/Great-Experiment-33846696" target="_blank">
-                                <img src="/Users/benjamin/benzhtan.github.io/Blog/images/long-form_narr.png" class="img-fluid">
-                                <h3>The Great Experiment: The virtual college campus in the time of COVID-19s</h3>
-                            </a>
-                            <div class="row, date">
-                                <time datetime="2020-04-25">April 25, 2020</time>
-                            </div>
-                            <p class="overflow-ellipsis" id="proj_description">
-                                Closely coordinated with a team of 15 to produce a multipart series examining the transition to distance learning on university campuses in the Pioneer Valley during the Covid-19 pandemic.
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
+        
+        <!--About Me-->
+        <div class="container col-lg-4 col-md-6 col-sm-8 col-xxs-8">
+            <p>So far, I have...</p>
+            <ol>
+                <li>Written about climate, <a href="https://www.gazettenet.com/Great-Experiment-33846696" target="_blank">Covid-19</a>, and a <a href="/Users/benjamin/benzhtan.github.io/Blog/sample-real-estate.html" target="_blank">NFL star turned real estate mogul</a>.</li>
+                <li>Scraped news outlets and <a href="https://mediainnovation.camd.northeastern.edu/2023/masters23/tan/" target="_blank">analyzed their coverage of nuclear energy</a>, visualized how <a href="https://journalismdesign.camd.northeastern.edu/the-end/tan/" target="_blank">one rainstorm almost broke a dam</a>, and <a href="https://www.storybench.org/using-r-and-media-cloud-to-do-sentiment-analysis/" target="_blank">chosen wrong methods</a> to analyze text data.</li>
+                <li>Yapped with nuclear reactor techs, <a href="/Users/benjamin/benzhtan.github.io/Blog/sample-wine.html" target="_blank">vintners</a>, and luthiers about their craft.</li>
+            </ol>
+            <br>
+            <p>These days, I...</p>
+            <ol>
+                <li>Write about <a href="https://www.remineralize.org/author/benjamin-zh-tan/" target="_blank">carbon markets</a>.</li>
+                <li>Train science writers.</li>
+                <li>Herd a team of developers and designers.</li>
+                <li>Build <a href="/Users/benjamin/benzhtan.github.io/Blog/main.html" target="_blank">websites</a> with no sense of aesthetics.</li>
+            </ol>    
+            <br>
+            <p>Tl;dr, I like asking questions and finding people to answer them.</p>
+            <p>Have questions? <a href="mailto:ben.zh.tan@gmail.com" target="_blank">Let's chat!</a></p>
         </div>
     </body>
-    
+
     <br>
-    
+
     <footer>
         <hr>
-        <p>
-            &copy; Benjamin ZH Tan 2024
-        </p>
+        <!--Insert icons for social netowrking sites-->
+        <p>&copy; Benjamin ZH Tan 2024</p>
     </footer>
+</html>
