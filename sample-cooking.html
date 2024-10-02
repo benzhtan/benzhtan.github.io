@@ -1,44 +1,29 @@
-<!--
-    Issues and tickets:
-        - I really DO NOT like the typeface
-        - Added page for glassblowing lab
-        • Iterate on design of glassblowing lab page
-        • Continue optimizing for mobile and tablet
-        - Reach idea 1: Implement dark mode based on system time
-        - Reach idea 2: Improving readability of text when in dark mode
-
-    KEYBOARD BINDINGS TO CREATE COMMENT
-        - CMD+/ comments out multiple lines
-        - Shift+option+A creates a new comment
--->
-
 <!DOCTYPE html>
+
 <html>
     <head>
         <!-- IMPORTANT STUFF -->
         <meta charset=”utf-8”/>
         <meta name="author" content="Benjamin Tan">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hello! I'm benzhtan!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>benzhtan &mdash; Massachusetts&apos; Vineyard</title>
 
         <!-- STYLE SHEETS -->
             <!--Bootstrap-->
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+            
             <!--Internal-->
                 <link rel="stylesheet" href="styles/styles.css">
-                <link rel="stylesheet" href="styles/styles-main.css">
+                <link rel="stylesheet" href="styles/styles-articles.css">
                 
     </head>
 
     <body>
-        <!--Logo-->
+        <!-- "Logo" -->
         <div class="container mt-5">
-            <div class="col">
-                <a href="index.html">
-                    <h1 id="ben">Hi, I'm Ben! &#x1F44B</h1>  <!--"&#x1F44B" is html entity for hand waving emoji-->
-                </a>
+            <div class="row">
+                <a href="index.html"><h1>Zi-Hao Benjamin Tan</h1></a>
             </div>
         </div>
 
@@ -60,33 +45,28 @@
                 </div>
             </div>
         </div>
-        
-        <!--About Me-->
-        <div class="container col-lg-4 col-md-6 col-sm-8 col-xxs-8">
-            <p>So far, I have...</p>
-            <ol>
-                <li>Written about <a href="">food</a>, <a href="https://www.gazettenet.com/Great-Experiment-33846696" target="_blank">Covid-19</a>, a <a href="https://theemancipator.org/2023/09/19/topics/legal-system/expanding-circle-reality-implementing-restorative-justice-across-country/" target="_blank">much-debated paradigm of justice</a>, and a <a href="sample-real-estate.html">NFL star turned real estate mogul</a>.</li>
-                <li>Scraped news outlets and <a href="https://mediainnovation.camd.northeastern.edu/2023/masters23/tan/" target="_blank">analyzed their coverage of nuclear energy</a>, visualized how <a href="https://journalismdesign.camd.northeastern.edu/the-end/tan/" target="_blank">one rainstorm almost broke a dam</a>, and <a href="https://www.storybench.org/using-r-and-media-cloud-to-do-sentiment-analysis/" target="_blank">chosen the wrong method</a> to analyze text data.</li>
-                <li>Yapped with nuclear reactor techs, <a href="sample-wine.html">vintners</a>, luthiers, <a href="">glassblowers</a>, and <a href="https://www.instagram.com/p/Bvwoh8ZBOB7/?igsh=dzlwZzFndHJoZ3kz" target="_blank">chefs</a> about their craft.</li>
-            </ol>
-            <br>
-            <p>These days, I...</p>
-            <ol>
-                <li>Write about <a href="https://www.remineralize.org/author/benjamin-zh-tan/" target="_blank">carbon markets</a>.</li>
-                <li>Train science writers.</li>
-                <li>Herd a team of developers and designers.</li>
-                <li><a href="https://github.com/benzhtan/benzhtan.github.io" target="_blank">Code</a> websites with no sense of aesthetics.</li>
-            </ol>    
-            <br>
-            <p id="tldr">Tl;dr, I like asking questions, seeking people in the know, and sharing what I find.</p>
-            <p class="mt-5">Have questions? <a href="mailto:ben.zh.tan@gmail.com" target="_blank">Let's chat!</a></p>
-        </div>
-    </body>
 
+        <!-- Content -->
+        <div class="container mt-5" id="content">
+            <h2 class="text-center mb-3" id="hedline"></h2>
+            <p class="text-center" id="subhed"><i>The glassblowers underpinning UMass Amherst&apos;s labs</i></p>
+
+            <article class="container py-3 col-lg-6 col-md-8 col-sm-10" id="story">
+            </article>
+
+        </div>
+
+        <!--Back to home-->
+        <div class="container text-center">
+            <a href="index.html">&larr; Back to home</a>
+        </div>
+
+    </body>
+    
     <br>
 
     <hr>
-
+    
     <footer>
         <div class="container py-5"> <!--Refer to Dev note "Resizing SNS icons" for styling tips-->
             <div class="container col-lg-4 col-md-3 col-sm-3" id="left-icon-buffer"></div>
