@@ -1,0 +1,6 @@
+#tldr {
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3px;
+}
