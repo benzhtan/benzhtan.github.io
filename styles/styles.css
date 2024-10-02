@@ -1,8 +1,8 @@
 /* TEST */
 h1 {
   font-size: 5vh;  
-  color: green;
-  text-align: center;
+  /* color: green; */
+   text-align: center;
 }
 
 /*------------ HYPERLINKS ------------*/
