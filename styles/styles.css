@@ -43,7 +43,13 @@ p#proj_description {
   text-overflow: ellipsis;
 }
 
+/*------------ <hr> ------------*/
+hr {
+  margin: auto;
+  max-width: 35%;
+}
+
 /*------------ SNS ICONS ------------*/
 .img-fluid {
-  max-width: 50%;
+  max-width: 35%;
 }
