@@ -1,3 +1,7 @@
+<!-- DEV NOTES
+• How to limit height of tornado gif to less than 1 vh? In Bootstrap or linked stylesheet?
+-->
+
 <!DOCTYPE html>
 
 <html>
@@ -27,7 +31,7 @@
             </div>
         </div>
 
-        <!--Nav buttons-->
+        <!--  Nav buttons -->
         <div class="container col-lg-6 col-md-8 col-sm-10 py-5" id="nav-buttons">
             <div class="container">
                 <div class="row">
@@ -50,14 +54,21 @@
         <div class="container mt-5" id="content">
             <h2 class="text-center mb-3" id="hedline">SOME CATCHY HEDLINE ABOUT TORNADOES</h2>
             <p class="text-center" id="subhed"><i>A subhed that elaborates on the hedline above.</i></p>
-
-            <p class="text-center" id="UnderConstruction">&#127959;</p>
-
-            <a href="images/Work_Samples/Projects/tornado/tornado-1950_2019.gif"></a>
-
-            <p class="text-center">Under construction... Please come back later!</p>
-            <!-- FIGURE OUT SCROLLY -->
-
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col"><!--FIRST COLUMN serves as buffer on left side--></div>
+                    <div class="col"><!--SECOND COLUMN is where the content goes-->
+                        <img
+                            src="images/Work_Samples/Projects/tornado/tornado-1950_2019.gif"
+                            alt="A looping animation visulizing the occurances of tornadoes from nineteen-fifty to twenty-nineteen"
+                            id="tornado-viz"
+                        > <!--This is the actual content-->
+                    </div>
+                    <div class="col"><!--THIRD COLUMN serves as buffer on right side--></div>
+                </div>
+            </div>
+            
             <p class="container py-3 col-lg-6 col-md-8 col-sm-10" id="attribution">
                 <i>From an assignment for Rodrigo Zamith&apos;s Data-Driven Storytelling class at UMass Amherst.</i>
             </p>
