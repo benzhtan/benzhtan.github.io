@@ -4,3 +4,10 @@
   text-underline-offset: 4px;
   text-decoration-thickness: 3px;
 }
+
+.clickable {
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
